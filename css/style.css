@@ -5,6 +5,12 @@ body {
     color: #333333
 }
 
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+}
+
 h3 {
     text-align: center;
     color: white;
@@ -12,8 +18,22 @@ h3 {
     font-family: "Bodoni MT", serif;
 }
 
+h2 {
+    color: #333333;
+}
+
 .content {
-    padding: 16px;
+    padding: 20px;
+}
+
+.ui.button.greyButton {
+    background-color: #333333;
+    color: white;
+}
+
+.ui.button.greyButton:hover{
+    background-color: #30d5c8;
+    color: white;
 }
 
 /*Headers*/
@@ -37,23 +57,17 @@ h3 {
     color: white;
     font-weight: bold;
     font-family: "Bodoni MT", serif;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the header stays above other content */
 }
 
 #bottomMenu {
     background: #30d5c8;
-    padding: 5px;
+    padding-top: 40px;
     color: #333333;
     font-size: smaller
-}
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-
-.sticky + .content {
-    padding-top: 102px;
 }
 
 #menu1 {
@@ -79,4 +93,140 @@ h3 {
 #menuIcon {
     position: relative;
 }
+
+/*FOOTER*/
+.contact-icon {
+    text-align: center;
+}
+
+.contact-icon i {
+    font-size: 24px; /* Adjust icon size as needed */
+}
+
+.contact-icon span {
+    font-weight: bold;
+    margin-left: 5px; /* Adjust spacing between icon and text */
+}
+
+#topFooter{
+    background-color: #636363;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-text{
+    color: white;
+}
+
+#bottomFooter{
+    background-color: #30d5c8;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+ul.tcs {
+    list-style-type: none;
+}
+
+ul.tcs li {
+    margin-bottom: 10px;
+}
+
+ul.tcs li a {
+    color: white;
+    text-decoration: underline;
+}#bottomFooter {
+     background-color: #30d5c8;
+     padding: 20px;
+     color: white;
+     text-align: center;
+ }
+
+.ui.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ui.grid .four.wide.column {
+    margin-bottom: 20px; /* Adjust the space between columns */
+}
+
+ul.tcs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.tcs li {
+    margin-bottom: 10px;
+}
+
+ul.tcs li a {
+    color: white;
+    text-decoration: underline;
+}
+
+.address p {
+    margin: 0; /* Remove default margin for paragraphs */
+}
+
+.social-icons2 {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons2 a {
+    margin: 0 10px; /* Adjust the space between social icons */
+}
+
+/*Contact*/
+#contact-form {
+    padding: 20px;
+}
+
+#map-container {
+    padding-right: 20px;
+}
+
+.social-icon {
+    margin: 0 40px;
+}
+
+.social-icons {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    text-align: left;
+    color: #30d5c8;
+    font-weight: bold;
+    font-family: "Bodoni MT", serif;
+    margin-bottom: 4px;
+}
+
+.contactLinks {
+    text-decoration: underline;
+    color: #333333;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.contact + p {
+    margin-top: -4px;
+}
+
+label{
+    color: #333333;
+}
+
+
+
+
+
+
 
