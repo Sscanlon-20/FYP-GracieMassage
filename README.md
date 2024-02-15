@@ -12,7 +12,7 @@ Integration with the Fresha app will facilitate appointment booking and gift vou
 
 ### Technologies Used
 
-- Visual Studio Code
+- IntelliJ Idea
 - Node.js
 - HTML
 - CSS
