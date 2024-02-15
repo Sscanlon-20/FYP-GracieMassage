@@ -1,3 +1,4 @@
+/*MAIN*/
 body {
     background-color: white;
     margin: 0;
@@ -22,6 +23,17 @@ h2 {
     color: #333333;
 }
 
+h1{
+    color: #30d5c8;
+    font-weight: bold;
+    font-family: "Bodoni MT", serif;
+}
+
+.divider {
+    border-top: 5px solid #30d5c8; /* black solid line */
+    margin: 20px 0; /* adds space above and below the line */
+}
+
 .content {
     padding: 20px;
 }
@@ -36,18 +48,13 @@ h2 {
     color: white;
 }
 
-/*Headers*/
+/*HEADERS*/
 .icon {
-    color: #30d5c8
+    color: #30d5c8;
 }
 
 #basket {
     color: #333333
-}
-
-#iconLogo {
-    width: 20px;
-    height: 20px;
 }
 
 #topHeader {
@@ -108,10 +115,9 @@ h2 {
     margin-left: 5px; /* Adjust spacing between icon and text */
 }
 
-#topFooter{
+#topFooter {
     background-color: #636363;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 0; /* 10px padding on top and bottom */
 }
 
 .footer-text{
@@ -120,7 +126,7 @@ h2 {
 
 #bottomFooter{
     background-color: #30d5c8;
-    padding: 20px;
+    padding: 10px;
     color: white;
     text-align: center;
 }
@@ -136,7 +142,9 @@ ul.tcs li {
 ul.tcs li a {
     color: white;
     text-decoration: underline;
-}#bottomFooter {
+}
+
+#bottomFooter {
      background-color: #30d5c8;
      padding: 20px;
      color: white;
@@ -172,13 +180,14 @@ ul.tcs li a {
     margin: 0; /* Remove default margin for paragraphs */
 }
 
-.social-icons2 {
-    display: flex;
-    justify-content: center;
+.social-icon {
+    color: white;
+    padding-bottom: 10px;
 }
 
-.social-icons2 a {
-    margin: 0 10px; /* Adjust the space between social icons */
+.trabeo{
+    height: 50px;
+    margin-top: 10px;
 }
 
 /*Contact*/
@@ -224,7 +233,24 @@ label{
     color: #333333;
 }
 
+/*ABOUT*/
+.about-content{
+    padding: 30px;
+    text-align: center;
+    color: #333333;
+}
 
+.about{
+    text-align: justify;
+}
+
+.about-heading{
+    color: #30d5c8;
+    font-weight: bold;
+    font-family: "Bodoni MT", serif;
+    text-align: left;
+    padding-top: 20px;
+}
 
 
 
