@@ -120,8 +120,12 @@ h1{
 }
 
 #topFooter {
-    background-color: #636363;
+    background-color: #30d5c8;
     padding: 0; /* 10px padding on top and bottom */
+}
+
+.custom-icon-color {
+    color: white;
 }
 
 .footer-text{
@@ -129,8 +133,8 @@ h1{
 }
 
 #bottomFooter{
-    background-color: #30d5c8;
-    padding: 10px;
+    background-color: #636363;
+    padding: 15px;
     color: white;
     text-align: center;
 }
@@ -147,13 +151,6 @@ ul.tcs li a {
     color: white;
     text-decoration: underline;
 }
-
-#bottomFooter {
-     background-color: #30d5c8;
-     padding: 20px;
-     color: white;
-     text-align: center;
- }
 
 .ui.grid {
     display: flex;
@@ -252,13 +249,12 @@ label{
     padding-top: 20px;
 }
 
-/*SPORTS MASSAGE*/
+/*SPORTS MASSAGE & AFTER CARE*/
 .sm-heading{
     color: #30d5c8;
     font-weight: bold;
     font-family: "Bodoni MT", serif;
     text-align: left;
-    padding-top: 20px;
 }
 
 .ui.grid {
@@ -283,15 +279,9 @@ label{
 .sm-container {
     border: 3px solid #636363;
     box-shadow: 0 0 20px 0 #30d5c8;
-    padding: 30px;
+    padding: 20px;
     margin: 10px 50px 20px 50px;
-}
-
-.ui.grid .column img {
-    width: 100%;
-    height: auto;
-    display: block;
-    padding: 10px;
+    background-color: white;
 }
 
 #sm-images {
@@ -299,10 +289,56 @@ label{
     margin-right: 30px;
 }
 
+#sm-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+}
+
 .highlight {
     font-weight: bold;
     color: #30d5c8;
 }
+
+.ac-container {
+    border: 3px solid #636363;
+    box-shadow: 0 0 20px 0 #30d5c8;
+    padding: 20px 20px 30px 20px;
+    margin: 10px 50px 20px 50px;
+    background-color: white;
+}
+
+.ac-container1 {
+    border: 3px solid #636363;
+    box-shadow: 0 0 20px 0 #30d5c8;
+    padding: 20px;
+    margin: 20px 10px 20px 50px;
+    background-color: white;
+}
+
+.ac-container2 {
+    border: 3px solid #636363;
+    box-shadow: 0 0 20px 0 #30d5c8;
+    padding: 20px 20px 18px 20px;
+    margin: 20px 50px 20px 10px;
+    background-color: white;
+}
+
+.grey-background {
+    background-color: #636363; /* Change to the desired shade of grey */
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 50px 20px 50px;
+}
+
+.image-container img {
+    max-width: 100%;
+}
+
+
 
 
 
