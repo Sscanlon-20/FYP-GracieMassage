@@ -2,7 +2,7 @@
 body {
     background-color: white;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  Helvetica, Arial, sans-serif;
     color: #333333
 }
 
@@ -27,6 +27,10 @@ h1{
     color: #30d5c8;
     font-weight: bold;
     font-family: "Bodoni MT", serif;
+}
+
+.text{
+    text-align: justify;
 }
 
 .divider {
@@ -240,10 +244,6 @@ label{
     color: #333333;
 }
 
-.about{
-    text-align: justify;
-}
-
 .about-heading{
     color: #30d5c8;
     font-weight: bold;
@@ -252,6 +252,57 @@ label{
     padding-top: 20px;
 }
 
+/*SPORTS MASSAGE*/
+.sm-heading{
+    color: #30d5c8;
+    font-weight: bold;
+    font-family: "Bodoni MT", serif;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.ui.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.sm-list {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.sm-list li:before {
+    content: "•";
+    color: #30d5c8;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.sm-container {
+    border: 3px solid #636363;
+    box-shadow: 0 0 20px 0 #30d5c8;
+    padding: 30px;
+    margin: 10px 50px 20px 50px;
+}
+
+.ui.grid .column img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+}
+
+#sm-images {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #30d5c8;
+}
 
 
 
