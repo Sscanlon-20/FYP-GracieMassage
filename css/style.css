@@ -34,8 +34,8 @@ h1{
 }
 
 .divider {
-    border-top: 5px solid #30d5c8; /* black solid line */
-    margin: 20px 0; /* adds space above and below the line */
+    border-top: 5px solid #30d5c8;
+    margin: 20px 0;
 }
 
 .content {
@@ -71,7 +71,7 @@ h1{
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensure the header stays above other content */
+    z-index: 1000;
 }
 
 #bottomMenu {
@@ -111,17 +111,17 @@ h1{
 }
 
 .contact-icon i {
-    font-size: 24px; /* Adjust icon size as needed */
+    font-size: 24px;
 }
 
 .contact-icon span {
     font-weight: bold;
-    margin-left: 5px; /* Adjust spacing between icon and text */
+    margin-left: 5px;
 }
 
 #topFooter {
     background-color: #30d5c8;
-    padding: 0; /* 10px padding on top and bottom */
+    padding: 0;
 }
 
 .custom-icon-color {
@@ -159,7 +159,7 @@ ul.tcs li a {
 }
 
 .ui.grid .four.wide.column {
-    margin-bottom: 20px; /* Adjust the space between columns */
+    margin-bottom: 20px;
 }
 
 ul.tcs {
@@ -178,7 +178,7 @@ ul.tcs li a {
 }
 
 .address p {
-    margin: 0; /* Remove default margin for paragraphs */
+    margin: 0;
 }
 
 .social-icon {
@@ -313,30 +313,40 @@ label{
     border: 3px solid #636363;
     box-shadow: 0 0 20px 0 #30d5c8;
     padding: 20px;
-    margin: 20px 10px 20px 50px;
+    margin: 0 10px 20px 50px;
     background-color: white;
 }
 
 .ac-container2 {
     border: 3px solid #636363;
     box-shadow: 0 0 20px 0 #30d5c8;
-    padding: 20px 20px 18px 20px;
-    margin: 20px 50px 20px 10px;
+    padding: 20px 20px 17px 20px;
+    margin: 0 50px 20px 10px;
     background-color: white;
 }
 
 .grey-background {
-    background-color: #636363; /* Change to the desired shade of grey */
+    background-color: #636363;
 }
 
 .image-container {
     text-align: center;
-    margin: 20px 50px 20px 50px;
+    margin: 0 50px 15px 50px;
 }
 
 .image-container img {
     max-width: 100%;
 }
+
+#relax {
+    max-width: 100%;
+    height: 100px;
+}
+
+
+
+
+
 
 
 
