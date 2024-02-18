@@ -248,6 +248,14 @@ label{
     padding-top: 20px;
 }
 
+#gallery a img {
+    padding:.5%;
+    margin: 5px 5px;}
+
+#gallery {
+    width: 100%;
+    padding:1em;}
+
 /*SPORTS MASSAGE & AFTER CARE*/
 .sm-heading{
     color: #30d5c8;
