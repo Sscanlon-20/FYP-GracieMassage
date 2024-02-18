@@ -104,6 +104,11 @@ h1{
     position: relative;
 }
 
+.bold{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /*FOOTER*/
 .contact-icon {
     text-align: center;
