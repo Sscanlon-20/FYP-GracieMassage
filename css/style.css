@@ -52,6 +52,11 @@ h1{
     color: white;
 }
 
+.bold{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /*HEADERS*/
 .icon {
     color: #30d5c8;
@@ -102,11 +107,6 @@ h1{
 
 #menuIcon {
     position: relative;
-}
-
-.bold{
-    font-weight: bold;
-    text-decoration: underline;
 }
 
 /*FOOTER*/
@@ -162,10 +162,6 @@ ul.tcs li a {
     justify-content: center;
 }
 
-.ui.grid .four.wide.column {
-    margin-bottom: 20px;
-}
-
 ul.tcs {
     list-style-type: none;
     margin: 0;
@@ -187,12 +183,12 @@ ul.tcs li a {
 
 .social-icon {
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .trabeo{
-    height: 50px;
-    margin-top: 10px;
+    height: 40px;
+    margin-top: 5px;
 }
 
 /*Contact*/
