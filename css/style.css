@@ -2,7 +2,7 @@
 body {
     background-color: white;
     margin: 0;
-    font-family:  Helvetica, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: #333333
 }
 
@@ -23,18 +23,18 @@ h2 {
     color: #333333;
 }
 
-h1{
-    color: #30d5c8;
+h1 {
+    color: #01b79f;
     font-weight: bold;
     font-family: "Bodoni MT", serif;
 }
 
-.text{
+.text {
     text-align: justify;
 }
 
 .divider {
-    border-top: 5px solid #30d5c8;
+    border-top: 5px solid #01b79f;
     margin: 20px 0;
 }
 
@@ -47,19 +47,19 @@ h1{
     color: white;
 }
 
-.ui.button.greyButton:hover{
-    background-color: #30d5c8;
+.ui.button.greyButton:hover {
+    background-color: #01b79f;
     color: white;
 }
 
-.bold{
+.bold {
     font-weight: bold;
     text-decoration: underline;
 }
 
 /*HEADERS*/
 .icon {
-    color: #30d5c8;
+    color: #01b79f;
 }
 
 #basket {
@@ -69,18 +69,22 @@ h1{
 #topHeader {
     background: #636363;
     text-align: center;
-    padding-top: 5px;
-    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: bold;
-    font-family: "Bodoni MT", serif;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
 }
 
+#head {
+    font-family: "Adelia", "Bodoni MT", serif;
+    color: #01b79f;
+}
+
 #bottomMenu {
-    background: #30d5c8;
+    background: #01b79f;
     padding-top: 40px;
     color: #333333;
     font-size: smaller
@@ -89,8 +93,8 @@ h1{
 #menu1 {
     display: none;
     position: absolute;
-    background: #30d5c8;
-    color: white;
+    background: #636363;
+    color: #01b79f;
     padding: 5px;
 }
 
@@ -98,11 +102,11 @@ h1{
     display: block;
     padding: 5px 0;
     text-decoration: none;
-    color: #333;
+    color: #01b79f;
 }
 
 #menu1 a:hover {
-    background-color: #f0f0f0;
+    text-decoration: #01b79f underline;
 }
 
 #menuIcon {
@@ -124,19 +128,19 @@ h1{
 }
 
 #topFooter {
-    background-color: #30d5c8;
-    padding: 0;
+    background-color: #01b79f;
+    padding: 10px;
 }
 
 .custom-icon-color {
     color: white;
 }
 
-.footer-text{
+.footer-text {
     color: white;
 }
 
-#bottomFooter{
+#bottomFooter {
     background-color: #636363;
     padding: 15px;
     color: white;
@@ -186,8 +190,12 @@ ul.tcs li a {
     padding-bottom: 5px;
 }
 
-.trabeo{
+.trabeo {
     height: 40px;
+    margin-top: 5px;
+}
+
+.trabeo1 {
     margin-top: 5px;
 }
 
@@ -213,7 +221,7 @@ ul.tcs li a {
 
 .contact {
     text-align: left;
-    color: #30d5c8;
+    color: #01b79f;
     font-weight: bold;
     font-family: "Bodoni MT", serif;
     margin-bottom: 4px;
@@ -230,19 +238,19 @@ ul.tcs li a {
     margin-top: -4px;
 }
 
-label{
+label {
     color: #333333;
 }
 
 /*ABOUT*/
-.about-content{
+.about-content {
     padding: 30px;
     text-align: center;
     color: #333333;
 }
 
-.about-heading{
-    color: #30d5c8;
+.about-heading {
+    color: #01b79f;
     font-weight: bold;
     font-family: "Bodoni MT", serif;
     text-align: left;
@@ -250,20 +258,23 @@ label{
 }
 
 #gallery a img {
-    padding:.5%;
-    margin: 5px 5px;}
+    padding: .5%;
+    margin: 5px 5px;
+}
 
 #gallery {
     width: 100%;
-    padding:1em;}
+    padding: 1em;
+}
 
 /*SPORTS MASSAGE & AFTER CARE*/
-.sm-heading{
-    color: #30d5c8;
+.sm-heading {
+    color: #01b79f;
     font-weight: bold;
     font-family: "Bodoni MT", serif;
     text-align: left;
     margin-bottom: 5px;
+
 }
 
 .ui.grid {
@@ -280,7 +291,7 @@ label{
 
 .sm-list li:before {
     content: "•";
-    color: #30d5c8;
+    color: #01b79f;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
@@ -288,7 +299,7 @@ label{
 
 .sm-container {
     border: 3px solid #636363;
-    box-shadow: 0 0 10px 0 #30d5c8;
+    box-shadow: 0 0 10px 0 #01b79f;
     padding: 30px;
     margin: 10px 50px 20px 50px;
     background-color: white;
@@ -308,12 +319,12 @@ label{
 
 .highlight {
     font-weight: bold;
-    color: #30d5c8;
+    color: #01b79f;
 }
 
 .ac-container {
     border: 3px solid #636363;
-    box-shadow: 0 0 20px 0 #30d5c8;
+    box-shadow: 0 0 20px 0 #01b79f;
     padding: 20px 20px 30px 20px;
     margin: 10px 50px 20px 50px;
     background-color: white;
@@ -321,7 +332,7 @@ label{
 
 .ac-container1 {
     border: 3px solid #636363;
-    box-shadow: 0 0 20px 0 #30d5c8;
+    box-shadow: 0 0 20px 0 #01b79f;
     padding: 20px;
     margin: 0 10px 20px 50px;
     background-color: white;
@@ -329,7 +340,7 @@ label{
 
 .ac-container2 {
     border: 3px solid #636363;
-    box-shadow: 0 0 20px 0 #30d5c8;
+    box-shadow: 0 0 20px 0 #01b79f;
     padding: 20px 20px 17px 20px;
     margin: 0 50px 20px 10px;
     background-color: white;
@@ -354,7 +365,7 @@ label{
     display: flex;
     justify-content: center;
     border: 3px solid #636363;
-    box-shadow: 0 0 20px 0 #30d5c8;
+    box-shadow: 0 0 20px 0 #01b79f;
     padding: 20px 20px 30px 1px;
     margin: 10px 50px 20px 50px;
 }
@@ -363,12 +374,12 @@ label{
     list-style-type: none;
 }
 
-.list1 li, .list2 li{
-        padding: 5px;
-        background-color: transparent;
-        width: 250px;
-        text-align: center;
-    }
+.list1 li, .list2 li {
+    padding: 5px;
+    background-color: transparent;
+    width: 250px;
+    text-align: center;
+}
 
 .list1 li h4,
 .list2 li h4 {
@@ -383,6 +394,74 @@ label{
 .heading-container {
     text-align: center;
 }
+
+/*TREATMENTS*/
+#carouselControls {
+    background-color: #01b79f;
+    padding: 40px
+}
+
+#treatment-heading{
+    text-align: center;
+}
+
+.book-button{
+    justify-content: center;
+}
+
+.btn-sm{
+    background-color: #636363;
+    color: white;
+    margin-top: 20px;
+}
+
+.text-container-bns,
+.text-container-sports{
+    background-color: white;
+    padding: 20px 20px 28px 20px;
+    border: 3px solid #636363;
+}
+
+.text-container-ha {
+    background-color: white;
+    padding: 20px 20px 26px 20px;
+    border: 3px solid #636363;
+}
+
+.text-container-swedish,
+.text-container-aroma{
+    background-color: white;
+    padding: 15px 20px 15px 20px;
+    border: 3px solid #636363;
+}
+
+.text-container-cupping {
+    background-color: white;
+    padding: 20px 20px 27px 20px;
+    border: 3px solid #636363;
+}
+
+
+.img-container {
+    border: 3px solid #636363;
+}
+
+.treatments{
+    color: #01b79f;
+    font-weight: bold;
+    font-family: "Bodoni MT", serif;
+    text-align: left;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #636363;
+}
+
+
+
+
+
 
 
 

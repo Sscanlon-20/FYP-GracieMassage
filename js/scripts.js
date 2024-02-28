@@ -1,6 +1,7 @@
-window.onscroll = function () {
-    myFunction()
+window.onscroll = function() {
+    myFunction();
 };
+
 const header = document.getElementById("topHeader");
 const sticky = header.offsetTop;
 
@@ -12,6 +13,7 @@ function toggleMenu() {
         menu.style.display = "block";
     }
 }
+
 
 function myFunction() {
     if (window.scrollY > sticky) {
