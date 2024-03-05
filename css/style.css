@@ -401,20 +401,6 @@ label {
     padding: 40px
 }
 
-#treatment-heading{
-    text-align: center;
-}
-
-.book-button{
-    justify-content: center;
-}
-
-.btn-sm{
-    background-color: #636363;
-    color: white;
-    margin-top: 20px;
-}
-
 .text-container-bns,
 .text-container-sports{
     background-color: white;
@@ -441,7 +427,6 @@ label {
     border: 3px solid #636363;
 }
 
-
 .img-container {
     border: 3px solid #636363;
 }
@@ -453,8 +438,100 @@ label {
     text-align: left;
 }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background-color: #636363;
+    opacity: 1;
+    margin-top: 180px;
+}
+
+#treatment-heading{
+    text-align: center;
+}
+
+.book-button{
+    justify-content: center;
+}
+
+.btn-sm{
+    background-color: #636363;
+    color: white;
+    margin-top: 20px;
+}
+
+.treatment-content{
+        padding: 10px 20px;
+    }
+
+/* ACCOUNT */
+.centered-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#custom-sign-in-buttons button {
+    margin: 5px;
+}
+
+.content-signIn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-signIn {
+    width: 300px;
+    padding: 20px;
+    border: 3px solid #636363;
+    box-shadow: 0 0 10px 0 #01b79f;
+    background-color: #fff;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container h4 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #01b79f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.google-sign-in-button {
     background-color: #636363;
 }
 

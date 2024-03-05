@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="css/lightbox.min.css">
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/logos/Green32.png">
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
 </head>
 
 <body>
@@ -20,7 +20,7 @@
                 <a class="item" onclick="toggleMenu()">
                     <i class="bars icon"></i>
                     <div id="menu1">
-                        <a class="item" href="index.html">Home</a>
+                        <a class="active item" href="index.html">Home</a>
                         <div class="ui simple dropdown item">
                             <span>About</span>
                             <div class="menu">
@@ -62,8 +62,9 @@
     </div>
 
     <div id="bottomMenu" class="ui secondary pointing menu">
+
         <div class="right menu">
-            <a href="index.html" class="item">Home</a>
+            <a href="index.html" class="active item">Home</a>
             <div class="ui simple dropdown item">
                 <span>About</span>
                 <div class="menu">
@@ -85,71 +86,20 @@
 </header>
 
 <!-- CONTENT -->
-<div class="about-content">
-    <div class="ui grid">
-        <div class="six wide column">
-            <img src="images/sarah1.jpg" alt="Gracie Massage" style="max-width: 100%;">
-        </div>
-        <div class="ten wide column">
-            <h1>About Gracie Massage</h1>
-            <p class="text">
-                Hi my name is Sarah, I work as a sports massage therapist, living in Tramore.
-                I have always had a passion for natural healing and helping others feel good in their bodies.
-                In 2017, I decided to make a career change and started studying Sports Massage Therapy.</p>
-
-            <p class="text">I always wanted to work with teams, and I've had the pleasure of working with some leading
-                top Jockeys here in Ireland.
-                I've worked with an English Cycling team, a local soccer club, an MMA team in my local town, and
-                numerous runners and cyclists.
-                I've worked side pitch as a first aid responder. This has been an amazing experience.
-                I’ve since taken on a more holistic approach to my massage techniques, promoting wellness through
-                massage.</p>
-
-            <p class="text">While studying, I developed a love for essential oils, and I started creating my own unique
-                blends using high grade essential oils.
-                These blends are available to purchase at my therapy room at Trá Beo Tramore.
-                It was through my interest in essential oils that inspired me to do a course in aromatouch massage,
-                using a blend of 8 different essential oils to create an overall wellness experience.</p>
-        </div>
-    </div>
-    <div>
-        <h2 class="about-heading">Why I choose Sports massage?</h2>
-        <p class="text">
-            I have always wanted to work with teams, soccer teams specifically, which led me on to work with an array of
-            different sports athletes.
-            I love the physical and psychological effects it has on the body and mind, how it can promote a sense of
-            well-being, boost morale,
-            relaxation and an escape.</p>
-
-        <p class="text"> I studied Level 3 Diploma In Sports Massage with IMST in Kilkenny,
-            where we deep dived into the Anatomy and Physiology of the human body.
-            I then furthered my studies by doing Level 4 Certified in Sports Massage.
-            This was a dive into common sports injuries and how to identify and treat certain ailments with different
-            techniques in sports massage.
-            Since then, I've been upskilling through workshops doing Dry Cupping,
-            Aromatouch Massage and first Aid. I've done lots of personal healing through inner child work, Kirtan
-            meditation,
-            yoga and sound healing. I would love to work in one of these areas down the line.
-        </p>
-    </div>
-    <hr class="divider">
-
-    <div class= "ui grid stackable container">
-        <div id="gallery">
-            <a href="images/sportsMassage1.png" data-title="Sports Massage Certificate" data-lightbox="Gracie Massage">
-                <img src="images/small/sportsMassage2.png" width="120" height="150" alt="Cert 1"></a>
-            <a href="images/aromatouch1.png" data-title="Aromatouch Massage Certificate" data-lightbox="Gracie Massage">
-                <img src="images/small/aromatouch2.png" width="150" height="120" alt="Cert 2"></a>
-            <a href="images/cert1.png" data-title="Cert 3" data-lightbox="Gracie Massage">
-                <img src="images/small/cert2.png" width="120" height="150" alt="Cert 3"></a>
-            <a href="images/cert1.png" data-title="Cert 4" data-lightbox="Gracie Massage">
-                <img src="images/small/cert2.png" width="120" height="150" alt="Cert 4"></a>
-            <a href="images/cert1.png" data-title="Cert 5" data-lightbox="Gracie Massage">
-                <img src="images/small/cert2.png" width="120" height="150" alt="Cert 5"></a>
-        </div>
+<div class="content-signIn">
+    <div class="container-signIn">
+        <h1>Login or Sign Up</h1>
+        <h4>Members will receive monthly newsletters and special offers.</h4>
+        <p>You can unsubscribe at any time.</p>
+        <form id="custom-sign-in-form" class="centered-form">
+            <label for="email"></label><input type="email" id="email" placeholder="Email">
+            <label for="password"></label><input type="password" id="password" placeholder="Password">
+            <button id="custom-sign-in-button" type="submit">Login</button>
+            <button id="custom-sign-up-button" type="button">Sign Up</button>
+        </form>
+        <button id="google-sign-in-button" class="google-sign-in-button" type="button">Login with Google</button>
     </div>
 </div>
-
 <!-- FOOTER -->
 <footer>
     <div id="topFooter">
@@ -225,8 +175,11 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-<script src="js/lightbox.min.js"></script>
 <script src="js/scripts.js"></script>
+<script SRC="js/firebase/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+
 </body>
 </html>
-

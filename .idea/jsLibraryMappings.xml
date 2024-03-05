@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{jquery, jquery-1.11.0, jquery-3.6.0, jquery-migrate-1.2.1, semantic-ui}" />
+    <file url="PROJECT" libraries="{firebase-app, firebase-app-compat, firebase-auth, firebase-auth-compat, firebase-firestore-compat, firebase-ui-auth, jquery, semantic-ui}" />
   </component>
 </project>
