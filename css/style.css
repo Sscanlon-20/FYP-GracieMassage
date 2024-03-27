@@ -42,16 +42,6 @@ h1 {
     padding: 40px 20px;
 }
 
-.ui.button.greyButton {
-    background-color: #333333;
-    color: white;
-}
-
-.ui.button.greyButton:hover {
-    background-color: #01b79f;
-    color: white;
-}
-
 .bold {
     font-weight: bold;
     text-decoration: underline;
@@ -240,6 +230,17 @@ ul.tcs li a {
 
 label {
     color: #333333;
+}
+
+.ui.button.greyButton {
+    background-color: #636363;
+    color: white;
+    padding: 15px
+}
+
+.ui.button.greyButton:hover {
+    background-color: #01b79f;
+    color: white;
 }
 
 /*ABOUT*/
@@ -533,6 +534,23 @@ button:hover {
 
 .google-sign-in-button {
     background-color: #636363;
+}
+
+/*ACCOUNT*/
+.account-container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid #636363;
+    box-shadow: 0 0 10px 0 #01b79f;
+    background-color: #fff;
+    text-align: center;
+}
+
+#save-btn {
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
 }
 
 

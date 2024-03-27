@@ -14,7 +14,6 @@ function toggleMenu() {
     }
 }
 
-
 function myFunction() {
     if (window.scrollY > sticky) {
         header.classList.add("sticky");

@@ -19,20 +19,22 @@ document.addEventListener("DOMContentLoaded", function() {
     const signInForm = document.getElementById('custom-sign-in-form');
     const signUpButton = document.getElementById('custom-sign-up-button');
 
+    function redirectToAccountPage() {
+        window.location.href = 'account.html'; // Redirect to the account page
+    }
+
     googleSignInButton.addEventListener('click', function() {
         const provider = new firebase.auth.GoogleAuthProvider();
         auth.signInWithPopup(provider)
             .then((result) => {
                 const credential = result.credential;
                 const user = result.user;
-                window.location.href = 'contact.html';
+                redirectToAccountPage(); // Redirect to account page
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                const email = error.email;
-                const credential = error.credential;
-                // ...
+                // Handle errors
             });
     });
 
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         auth.signInWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                window.location.href = 'contact.html';
+                redirectToAccountPage(); // Redirect to account page
             })
             .catch((error) => {
                 const errorCode = error.code;
@@ -59,8 +61,8 @@ document.addEventListener("DOMContentLoaded", function() {
         auth.createUserWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                // Redirect to the success URL
-                window.location.href = 'contact.html';
+                // Redirect to the account page after signup
+                redirectToAccountPage();
             })
             .catch((error) => {
                 const errorCode = error.code;

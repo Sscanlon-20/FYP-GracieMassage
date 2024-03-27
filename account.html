@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sports Massage</title>
+    <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/logos/Green32.png">
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css"/>
 </head>
 
 <body>
@@ -85,70 +86,28 @@
     </div>
 </header>
 
-
 <!-- CONTENT -->
 <div class="content">
-    <div id="sm-images" class="ui grid">
-        <div class="four wide column">
-            <img src="images/back.png" alt="Gracie_massage">
-        </div>
-        <div class="four wide column">
-            <img src="images/arm.png" alt="Gracie_massage">
-        </div>
-        <div class="four wide column">
-            <img src="images/knee.png" alt="Gracie_massage">
-        </div>
-        <div class="four wide column">
-            <img src="images/leg.png" alt="Gracie_massage">
-        </div>
-    </div>
-    <div class="sm-container">
-        <div class="ui grid sports-massage">
-            <h1 class="sm-heading">What is Sports Massage?</h1>
-            <p class="text">
-                Sports Massage does not have to be saved just for treatment of injuries that have already occurred,
-                it is much more powerful as a preventative tool to keep the body healthy. This Massage is tailored to each individual's needs,
-                using different sports massage techniques
-            </p>
-            <div>
-                <h2 class="sm-heading">What is it used for?</h2>
-                <ul class="sm-list">
-                    <li>Helps break down scar tissue</li>
-                    <li>Realigns adhesion's</li>
-                    <li>Will help lengthen or shorten tissues</li>
-                </ul>
+    <div class="account-container">
+        <div class="content-account">
+            <div class="container-account">
+                <h1>Welcome to Your Account Page</h1>
+                <h2>User Details</h2>
+                <div id="user-details">
+                    <!-- User details will be displayed here -->
+                </div>
+
+                <h2>Add or Update Details</h2>
+                <form id="user-info-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Your Name">
+                    <label for="birthday">Birthday (DD-MM):</label>
+                    <input type="text" id="birthday" placeholder="DD-MM">
+                    <button type="submit" id="save-btn">Save</button>
+                </form>
             </div>
         </div>
     </div>
-
-    <div class="sm-container">
-        <div class="ui grid sports-massage">
-            <h1 class="sm-heading">Techniques Used in Sports Massage</h1>
-            <ul class="sm-list">
-                <li><span class="highlight">Effleurage-Flat and relaxed hand</span> - Generally done at the beginning and ending of massage.
-                    Helps warm the skin and prepare for deeper work.</li>
-                <li><span class="highlight">Petrissage a compression stroke</span> - Such as kneading to help break down tension, improve elasticity in the muscle,
-                    aids relaxation.</li>
-                <li><span class="highlight">Frictions</span> - A very deep technique, heavily stimulating on the blood flow.</li>
-                <li><span class="highlight">Circular</span> - Helps with lubrication of joint membrane.</li>
-                <li><span class="highlight">Percussions</span> - These are invigorating strokes which will stimulate a muscle and mainly used over weekend
-                    atrophied muscles.</li>
-                <li><span class="highlight">Vibrations</span> - A shake to the muscle to aid with relaxation, loosen adhesions,
-                    generally used on calves and quadriceps.</li>
-                <li><span class="highlight">Neuromuscular techniques</span> - This provokes a reflex in the nervous system, helps muscle to relax,
-                    reduce spasms and pain.</li>
-                <li><span class="highlight">Soft tissue release</span> - Technique that improves flexibility in a localised area of muscle or tendon.</li>
-                <li><span class="highlight">Muscle energy technique</span> - Isometric contraction followed by a stretch,
-                    This technique inhibits the muscles spindles and Golgi tendon organs to allow an improvement in flexibility.</li>
-                <li><span class="highlight">Manual Lymphatic drainage</span> - To encourage deep and superficial lymphatic drainage,
-                    light deep strokes working towards the heart.</li>
-                <li><span class="highlight">Neuromuscular techniques</span> - This provokes a reflex in the nervous system, helps muscle to relax,
-                    reduce spasms and pain.</li>
-
-            </ul>
-        </div>
-    </div>
-
 </div>
 
 <!-- FOOTER -->
@@ -225,8 +184,14 @@
         </div>
     </div>
 </footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="js/scripts.js"></script>
+<script SRC="js/firebase/firebase-auth.js"></script>
+<script SRC="js/firebase/firebase-users.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
 </body>
 </html>
