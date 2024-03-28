@@ -102,21 +102,15 @@
             <form class="ui form">
                 <div class="field">
                     <label>First Name</label>
-                    <label>
-                        <input type="text" name="first-name" placeholder="First Name">
-                    </label>
+                    <input type="text" name="name" placeholder="First Name" required>
                 </div>
                 <div class="field">
                     <label>E-mail</label>
-                    <label>
-                        <input type="email" placeholder="jane@doe.com">
-                    </label>
+                    <input type="email" name="email" placeholder="jane@doe.com" required>
                 </div>
                 <div class="field">
                     <label>Message</label>
-                    <label>
-                        <textarea rows="3"></textarea>
-                    </label>
+                    <textarea name="message" rows="3" required></textarea>
                 </div>
                 <button class="ui button greyButton" type="submit">Submit</button>
             </form>
@@ -232,5 +226,6 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/firebase/firebase-form.js"></script>
 </body>
 </html>
