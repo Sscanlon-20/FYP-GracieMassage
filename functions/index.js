@@ -1,19 +1,44 @@
-/**
- * Import function triggers from their respective submodules:
- *
- * const {onCall} = require("firebase-functions/v2/https");
- * const {onDocumentWritten} = require("firebase-functions/v2/firestore");
- *
- * See a full list of supported triggers at https://firebase.google.com/docs/functions
- */
+const functions = require("firebase-functions");
+const admin = require("firebase-admin");
+const nodemailer = require("nodemailer");
+const cors = require("cors")({ origin: true }); // Enable CORS
 
-const {onRequest} = require("firebase-functions/v2/https");
-const logger = require("firebase-functions/logger");
+admin.initializeApp();
 
-// Create and deploy your first functions
-// https://firebase.google.com/docs/functions/get-started
+const transporter = nodemailer.createTransport({
+    service: "Gmail",
+    auth: {
+        user: "scnlsrh@gmail.com",
+        pass: "135246Ss%",
+    },
+});
 
-// exports.helloWorld = onRequest((request, response) => {
-//   logger.info("Hello logs!", {structuredData: true});
-//   response.send("Hello from Firebase!");
-// });
+exports.sendEmail = functions.https.onRequest((req, res) => {
+    cors(req, res, () => { // Use the CORS middleware
+        const { name, email, message } = req.body;
+
+        const mailOptions = {
+            from: "noreply@example.com",
+            to: "scnlsrh@gmail.com",
+            subject: "New Message from Website",
+            html: `<p><b>Name:</b> ${name}</p>
+                <p><b>Email:</b> ${email}</p>
+                <p><b>Message:</b> ${message}</p>`,
+            replyTo: email, // Include the sender's email as the reply-to address
+        };
+
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                console.error("Error sending email:", error);
+                res.status(500).send("Error sending email");
+            } else {
+                console.log("Email sent:", info.response);
+                res.status(200).send("Email sent successfully");
+            }
+        });
+    });
+});
+
+
+
+

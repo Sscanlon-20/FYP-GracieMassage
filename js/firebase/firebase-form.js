@@ -1,7 +1,7 @@
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent default form submission behavior
 
-    const formData = new FormData(this);
+    const formData = new FormData(document.getElementById('contact-form'));
     const name = formData.get('name');
     const email = formData.get('email');
     const message = formData.get('message');

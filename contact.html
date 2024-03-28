@@ -97,24 +97,29 @@
 <!-- CONTENT -->
 <div class="content">
     <div class="ui grid">
-        <div id="contact-form" class="eight wide column">
-            <h1>Contact Us</h1>
-            <form class="ui form">
+        <div id="form" class="eight wide column">
+            <h1 class="heading-contact">Contact Us</h1>
+
+            <form id="contact-form" class="ui form">
                 <div class="field">
-                    <label>First Name</label>
+                    <label>First Name
                     <input type="text" name="name" placeholder="First Name" required>
+                    </label>
                 </div>
                 <div class="field">
-                    <label>E-mail</label>
+                    <label>E-mail
                     <input type="email" name="email" placeholder="jane@doe.com" required>
+                    </label>
                 </div>
                 <div class="field">
-                    <label>Message</label>
+                    <label>Message
                     <textarea name="message" rows="3" required></textarea>
+                    </label>
                 </div>
                 <button class="ui button greyButton" type="submit">Submit</button>
             </form>
         </div>
+
         <div id="map-container" class="eight wide column">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.183984597215!2d-7.136276223794042!3d52.16734826227946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4842c327988bf6a9%3A0x85fc3ba7afa8f964!2sGracie%20Massage!5e0!3m2!1sen!2sie!4v1707930749505!5m2!1sen!2sie"
                     width= "700" height="350" style="border:0;" allowfullscreen="" loading="lazy"
@@ -124,8 +129,8 @@
     </div>
     <div class="ui grid">
         <div class="four wide column">
-            <a href="https://www.facebook.com/graciesportsmassageandoils/"><i class="huge facebook square icon"></i></a>
-            <a href="https://www.instagram.com/gracie_massage/"><i class="huge instagram icon"></i></a>
+            <a href="https://www.facebook.com/graciesportsmassageandoils/"><i class="massive facebook square icon"></i></a>
+            <a href="https://www.instagram.com/gracie_massage/"><i class="massive instagram icon insta"></i></a>
         </div>
         <div class="four wide column trabeo1">
             <a href="https://www.trabeo.ie">
@@ -224,6 +229,7 @@
 </footer>
 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/firebase/firebase-form.js"></script>

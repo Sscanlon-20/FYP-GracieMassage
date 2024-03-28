@@ -1,5 +1,11 @@
 {
   "projects": {
     "default": "gracie-massage"
+  },
+  "targets": {},
+  "etags": {
+    "gracie-massage": {
+      "extensionInstances": {}
+    }
   }
 }
