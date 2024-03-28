@@ -29,8 +29,13 @@ h1 {
     font-family: "Bodoni MT", serif;
 }
 
+p {
+    line-height: 2.5em;
+}
+
 .text {
     text-align: justify;
+
 }
 
 .divider {
@@ -59,8 +64,8 @@ h1 {
 #topHeader {
     background: #636363;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-weight: bold;
     position: fixed;
     top: 0;
@@ -73,26 +78,39 @@ h1 {
     color: #01b79f;
 }
 
+#head2 {
+    font-family: "Adelia", "Bodoni MT", serif;
+    color: white;
+    vertical-align: center;
+    font-size: xx-large;
+    padding-bottom: 20px;
+}
+
+#leftHeader p{
+    font-weight: bold;
+}
+
 #bottomMenu {
-    background: #01b79f;
-    padding-top: 40px;
+    background-color: #01b79f;
+    padding-top: 60px;
+    padding-left: 50px;
     color: #333333;
-    font-size: smaller
+    font-size: large;
 }
 
 #menu1 {
     display: none;
     position: absolute;
-    background: #636363;
-    color: #01b79f;
-    padding: 5px;
+    padding: 10px 20px 15px 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: white;
 }
 
 #menu1 a {
     display: block;
     padding: 5px 0;
     text-decoration: none;
-    color: #01b79f;
+    color: #636363;
 }
 
 #menu1 a:hover {
@@ -102,6 +120,7 @@ h1 {
 #menuIcon {
     position: relative;
 }
+
 
 /*FOOTER*/
 .contact-icon {
@@ -128,6 +147,7 @@ h1 {
 
 .footer-text {
     color: white;
+    font-size: large;
 }
 
 #bottomFooter {
@@ -139,6 +159,7 @@ h1 {
 
 ul.tcs {
     list-style-type: none;
+    line-height: 2.5em;
 }
 
 ul.tcs li {
@@ -173,6 +194,7 @@ ul.tcs li a {
 
 .address p {
     margin: 0;
+    line-height: 2.3em;
 }
 
 .social-icon {
@@ -182,12 +204,13 @@ ul.tcs li a {
 
 .trabeo {
     height: 40px;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .trabeo1 {
     margin-top: 5px;
 }
+
 
 /*Contact*/
 #contact-form {
@@ -254,8 +277,18 @@ label {
     color: #01b79f;
     font-weight: bold;
     font-family: "Bodoni MT", serif;
+    text-align: center;
+    padding-top: 20px;
+    font-size: xxx-large;
+}
+
+.about-heading2 {
+    color: #01b79f;
+    font-weight: bold;
+    font-family: "Bodoni MT", serif;
     text-align: left;
     padding-top: 20px;
+    font-size: xxx-large;
 }
 
 #gallery a img {
