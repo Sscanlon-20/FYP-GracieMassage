@@ -22,9 +22,9 @@
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
                         <div class="ui simple dropdown item">
-                            <a class="item" href="about.html">
-                                <span>About</span></a>
+                            <span>About</span>
                             <div class="menu">
+                                <a class="item" href="about.html">About</a>
                                 <a class="item" href="sports-massage.html">Sports Massage</a>
                                 <a class="item" href="after-care.html">After Care</a>
                                 <a class="item" href="treatments.html">Treatments</a>
@@ -35,7 +35,7 @@
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
                         <a href="contact.html">Contact</a>
-                        <a href="login.html" class="active Item">Account</a>
+                        <a id="top-account-tab" class="active item" href="#">Account</a>
                     </div>
                 </a>
             </div>
@@ -50,13 +50,15 @@
             <div class="two wide column">
                 <a class="item">
                     <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank" rel="noopener noreferrer">
-                        <i class="large facebook square icon"></i></a>
+                        <i class="large facebook square icon"></i>
+                    </a>
                 </a>
             </div>
             <div class="two wide column">
                 <a class="item">
                     <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer">
-                        <i class="large instagram icon"></i></a>
+                        <i class="large instagram icon"></i>
+                    </a>
                 </a>
             </div>
         </div>
@@ -85,15 +87,13 @@
                 </div>
             </div>
             <a class="item">Shop</a>
-            <a class="item"
-               href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
-               target="_blank" rel="noopener noreferrer">Book Now</a>
+            <a class="item" href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893" target="_blank"
+               rel="noopener noreferrer">Book Now</a>
             <a href="contact.html" class="item">Contact</a>
-            <a class="active item" href="login.html">Account</a>
+            <a id="bottom-account-tab" class="item" href="#">Account</a>
             <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
         </div>
     </div>
-
 </header>
 
 <!-- CONTENT -->
@@ -102,18 +102,20 @@
         <div class="content-account">
             <div class="container-account">
                 <h1>Welcome to Your Account Page</h1>
-                <h2>User Details</h2>
                 <div id="user-details">
                     <!-- User details will be displayed here -->
                 </div>
 
-                <h2>Add or Update Details</h2>
+                <h3 id="user">Add or Update Details</h3>
                 <form id="user-info-form">
                     <label for="name">Name:</label>
                     <input type="text" id="name" placeholder="Your Name">
-                    <label for="birthday">Birthday (DD-MM):</label>
-                    <input type="text" id="birthday" placeholder="DD-MM">
+
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" placeholder="Your Number">
+
                     <button type="submit" id="save-btn">Save</button>
+                    <button type="button" id="logout-btn">Logout</button>
                 </form>
             </div>
         </div>

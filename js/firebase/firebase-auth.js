@@ -9,10 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         measurementId: "G-9HGTFB4K0F"
     };
 
-    // Initialize Firebase
     const firebaseApp = firebase.initializeApp(firebaseConfig);
-
-    // Get Firebase Auth instance
     const auth = firebaseApp.auth();
 
     const googleSignInButton = document.getElementById('google-sign-in-button');
@@ -20,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const signUpButton = document.getElementById('custom-sign-up-button');
 
     function redirectToAccountPage() {
-        window.location.href = 'account.html'; // Redirect to the account page
+        window.location.href = 'account.html';
     }
 
     googleSignInButton.addEventListener('click', function() {
@@ -29,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function() {
             .then((result) => {
                 const credential = result.credential;
                 const user = result.user;
-                redirectToAccountPage(); // Redirect to account page
+                redirectToAccountPage();
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
-                // Handle errors
+                console.error(errorCode, errorMessage);
             });
     });
 
@@ -46,11 +43,12 @@ document.addEventListener("DOMContentLoaded", function() {
         auth.signInWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                redirectToAccountPage(); // Redirect to account page
+                redirectToAccountPage();
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
+                console.error(errorCode, errorMessage);
             });
     });
 
@@ -61,12 +59,28 @@ document.addEventListener("DOMContentLoaded", function() {
         auth.createUserWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
-                // Redirect to the account page after signup
                 redirectToAccountPage();
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
+                console.error(errorCode, errorMessage);
+            });
+    });
+
+    forgotPasswordLink.addEventListener('click', function(event) {
+        event.preventDefault();
+        const email = document.getElementById('email').value;
+
+        auth.sendPasswordResetEmail(email)
+            .then(function() {
+                // Password reset email sent
+                alert("Password reset email sent. Please check your email inbox.");
+            })
+            .catch(function(error) {
+                // An error occurred
+                console.error("Error sending password reset email:", error);
+                alert("Error sending password reset email. Please try again later.");
             });
     });
 });

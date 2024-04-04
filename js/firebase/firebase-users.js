@@ -1,95 +1,41 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const firebaseConfig = {
+        apiKey: "AIzaSyBafFN9TD4y0JnXdOfXEYB7--a4oKL-Jvg",
+        authDomain: "gracie-massage.firebaseapp.com",
+        projectId: "gracie-massage",
+        storageBucket: "gracie-massage.appspot.com",
+        messagingSenderId: "1084385050785",
+        appId: "1:1084385050785:web:87c2c31a2df6a30392b0e0",
+        measurementId: "G-9HGTFB4K0F"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+
     const db = firebase.firestore();
-    const userDetailsContainer = document.getElementById('user-details');
     const saveButton = document.getElementById('save-btn');
+    const nameInput = document.getElementById('name');
+    const phoneInput = document.getElementById('phone');
 
-    function formatBirthday(dateString) {
-        const [day, month] = dateString.split('-').map(Number);
-        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-
-        // Determine suffix for the day
-        let suffix = 'th';
-        if (day === 1 || day === 21 || day === 31) {
-            suffix = 'st';
-        } else if (day === 2 || day === 22) {
-            suffix = 'nd';
-        } else if (day === 3 || day === 23) {
-            suffix = 'rd';
-        }
-
-        return `${day}${suffix} ${monthNames[month - 1]}`;
-    }
-
-    function displayUserDetails(user) {
-        userDetailsContainer.innerHTML = ''; // Clear previous content
-
-        userDetailsContainer.innerHTML += `
-            <p><strong>Email:</strong> ${user.email}</p>
-        `;
-
-        if (user.displayName) {
-            userDetailsContainer.innerHTML += `
-                <p><strong>Name:</strong> ${user.displayName}</p>
-            `;
-        } else {
-            userDetailsContainer.innerHTML += `
-                <p><strong>Name:</strong> Not provided</p>
-            `;
-        }
-
-        db.collection('users').doc(user.uid).get()
-            .then(function(doc) {
-                if (doc.exists) {
-                    const userData = doc.data();
-                    const birthday = userData.birthday;
-                    if (birthday) {
-                        const formattedBirthday = formatBirthday(birthday);
-                        userDetailsContainer.innerHTML += `
-                            <p><strong>Birthday:</strong> ${formattedBirthday}</p>
-                        `;
-                    } else {
-                        userDetailsContainer.innerHTML += `
-                            <p><strong>Birthday:</strong> Not provided</p>
-                        `;
-                    }
-                } else {
-                    console.log('No such document!');
-                }
-            }).catch(function(error) {
-            console.error('Error getting document:', error);
-        });
-    }
-
-    firebase.auth().onAuthStateChanged(function(user) {
-        if (user) {
-            displayUserDetails(user);
-        } else {
-            userDetailsContainer.innerHTML = '<p>No user signed in</p>';
-        }
-    });
-
-    saveButton.addEventListener('click', function() {
-        const name = document.getElementById('name').value;
-        const birthday = document.getElementById('birthday').value;
+    saveButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        const name = nameInput.value;
+        const phone = phoneInput.value;
+        console.log("Name:", name);
+        console.log("Phone:", phone);
 
         const user = firebase.auth().currentUser;
 
-        user.updateProfile({
-            displayName: name,
+        // Save user details to Firebase database
+        db.collection('users').doc(user.uid).set({
+            name: name,
+            phone: phone,
+            email: user.email
         }).then(function() {
-
-            return db.collection('users').doc(user.uid).set({
-                birthday: birthday,
-            }, { merge: true });
-        }).then(function() {
-
-            displayUserDetails(user);
+            console.log("User details saved successfully");
         }).catch(function(error) {
-            console.error('Error updating user profile:', error);
+            console.error('Error saving user details:', error);
         });
     });
 });
-
-
 
 

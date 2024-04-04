@@ -132,7 +132,6 @@ p {
     position: relative;
 }
 
-
 /*FOOTER*/
 .contact-icon {
     text-align: center;
@@ -318,7 +317,6 @@ label {
     font-family: "Bodoni MT", serif;
     text-align: left;
     margin-bottom: 5px;
-
 }
 
 .ui.grid {
@@ -590,7 +588,7 @@ button:hover {
 }
 
 .account-container {
-    max-width: 800px; /* Adjust as needed */
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     border: 3px solid #636363;
@@ -599,12 +597,18 @@ button:hover {
     text-align: center;
 }
 
-#save-btn {
+#save-btn  {
     width: 100px;
     height: 40px;
     margin-left: 20px;
 }
 
+#user {
+    text-align: center;
+    color: #01b79f;
+    font-weight: bold;
+    font-family: "Helvetica", serif;
+}
 
 
 
