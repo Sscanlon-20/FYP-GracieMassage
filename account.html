@@ -108,14 +108,23 @@
 
                 <h3 id="user">Add or Update Details</h3>
                 <form id="user-info-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" placeholder="Your Name">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label-name" for="name">Name:</label>
+                            <input type="text" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group-phone">
+                            <label class="form-label-phone" for="phone">Phone:</label>
+                            <input type="text" id="phone" placeholder="Your Number">
+                        </div>
+                    </div>
 
-                    <label for="phone">Phone:</label>
-                    <input type="text" id="phone" placeholder="Your Number">
-
-                    <button type="submit" id="save-btn">Save</button>
-                    <button type="button" id="logout-btn">Logout</button>
+                    <div>
+                        <button type="button" id="save-btn">Save</button>
+                    </div>
+                    <div>
+                        <button type="button" id="logout-btn">Logout</button>
+                    </div>
                 </form>
             </div>
         </div>

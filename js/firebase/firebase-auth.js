@@ -16,6 +16,30 @@ document.addEventListener("DOMContentLoaded", function() {
     const signInForm = document.getElementById('custom-sign-in-form');
     const signUpButton = document.getElementById('custom-sign-up-button');
 
+    // Function to check if a password meets complexity requirements
+    function isPasswordValid(password) {
+        // Minimum length requirement
+        if (password.length < 8) {
+            return false;
+        }
+
+        // Regular expressions to check for uppercase, lowercase, numbers, and special characters
+        const uppercaseRegex = /[A-Z]/;
+        const lowercaseRegex = /[a-z]/;
+        const numberRegex = /[0-9]/;
+        const specialCharRegex = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+
+        // Check if password contains at least one uppercase letter, one lowercase letter, one number, and one special character
+        if (!uppercaseRegex.test(password) ||
+            !lowercaseRegex.test(password) ||
+            !numberRegex.test(password) ||
+            !specialCharRegex.test(password)) {
+            return false;
+        }
+
+        return true;
+    }
+
     function redirectToAccountPage() {
         window.location.href = 'account.html';
     }
@@ -52,10 +76,18 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     });
 
+    // Add event listener to sign up button
     signUpButton.addEventListener('click', function() {
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
+        // Check if password meets complexity requirements
+        if (!isPasswordValid(password)) {
+            alert("Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.");
+            return;
+        }
+
+        // Proceed with user creation if password is valid
         auth.createUserWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 const user = userCredential.user;

@@ -61,8 +61,6 @@ p {
     text-decoration: underline;
 }
 
-
-
 /*HEADERS*/
 .icon {
     color: #01b79f;
@@ -282,6 +280,189 @@ label {
 .trabeo {
     height: 80px;
 
+}
+
+/*HOME*/
+.hero-container {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-name{
+    font-family: "Adelia", "Bodoni MT", serif;
+    font-weight: bolder;
+    font-size: xxx-large;
+}
+
+.hero-text{
+    font-family: "Bodoni MT", Arial, sans-serif;
+    font-weight: bolder;
+    font-size: xx-large;
+    color: white;
+    padding-top: 20px;
+}
+
+.hero-button {
+    width: auto;
+}
+
+.book-now-link {
+    display: inline-block;
+}
+
+.home-content {
+    padding: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+.logo-container {
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.logo {
+    max-width: 70%;
+    max-height: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.logo2 {
+    max-width: 70%;
+    max-height: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.logo3 {
+    max-width: 70%;
+    max-height: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 35px;
+}
+
+#reviews-container {
+    background-color: #01b79f;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-wrapper {
+    align-self: flex-end;
+}
+
+#write-review-button {
+    background-color: #333333;
+    color: white;
+    padding: 15px;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+
+#review-boxes {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    justify-content: center;
+}
+
+.review {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+}
+
+.review:last-child {
+    margin-right: 0;
+}
+
+.review h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 15px;
+}
+
+#read-more-button {
+    background-color: #333333;
+    color: white;
+    padding: 15px;
+    width: fit-content;
+    margin: 20px auto 20px;
+    display: block;
+}
+
+#write-review-button{
+        background-color: #333333;
+        color: white;
+        padding: 15px;
+        width: fit-content;
+        margin: 50px 50px 20px auto;
+        display: block;
+    }
+
+.rating-heading{
+    color: white;
+    font-weight: bold;
+    font-family: "Bodoni MT", serif;
+    text-align: left;
+    padding-top: 20px;
+    font-size: xxx-large;
+    margin: 20px auto 30px 50px;
+}
+
+#read-more-button:hover,
+#write-review-button:hover{
+    background-color: white;
+    color: #333333;
+}
+
+.reviews-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 /*ABOUT*/
@@ -517,7 +698,7 @@ label {
     margin-bottom: 30px;
     }
 
-/* ACCOUNT */
+/* LOGIN */
 .centered-form {
     text-align: center;
     margin-top: 20px;
@@ -587,6 +768,7 @@ button:hover {
     background-color: #636363;
 }
 
+/* ACCOUNT */
 .account-container {
     max-width: 800px;
     margin: 0 auto;
@@ -597,11 +779,57 @@ button:hover {
     text-align: center;
 }
 
-#save-btn  {
-    width: 100px;
+#save-btn, #logout-btn {
+    width: 200px;
     height: 40px;
-    margin-left: 20px;
+
 }
+
+.form-container {
+    display: inline-block;
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group-phone{
+    margin-left: 40px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-label-phone,
+.form-label-name {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+
+
+
+
+
 
 #user {
     text-align: center;
