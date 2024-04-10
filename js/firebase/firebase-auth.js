@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
+// Firebase configuration object containing credentials
+document.addEventListener("DOMContentLoaded", function () {
     const firebaseConfig = {
         apiKey: "AIzaSyBafFN9TD4y0JnXdOfXEYB7--a4oKL-Jvg",
         authDomain: "gracie-massage.firebaseapp.com",
@@ -9,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         measurementId: "G-9HGTFB4K0F"
     };
 
+    // Initialize Firebase application with the provided configuration and Firebase authentication service
     const firebaseApp = firebase.initializeApp(firebaseConfig);
     const auth = firebaseApp.auth();
 
@@ -40,11 +42,13 @@ document.addEventListener("DOMContentLoaded", function() {
         return true;
     }
 
+    // Function to redirect the user to the account page.
     function redirectToAccountPage() {
         window.location.href = 'account.html';
     }
 
-    googleSignInButton.addEventListener('click', function() {
+    // Add event listener to the Google sign-in button
+    googleSignInButton.addEventListener('click', function () {
         const provider = new firebase.auth.GoogleAuthProvider();
         auth.signInWithPopup(provider)
             .then((result) => {
@@ -59,11 +63,13 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     });
 
-    signInForm.addEventListener('submit', function(event) {
+    // Add event listener to the custom sign-in form
+    signInForm.addEventListener('submit', function (event) {
         event.preventDefault();
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
+        // Sign in the user with the provided email and password
         auth.signInWithEmailAndPassword(email, password)
             .then((userCredential) => {
                 const user = userCredential.user;
@@ -77,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Add event listener to sign up button
-    signUpButton.addEventListener('click', function() {
+    signUpButton.addEventListener('click', function () {
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
 
@@ -100,16 +106,17 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     });
 
-    forgotPasswordLink.addEventListener('click', function(event) {
+    // Event listener for the "forgot password" link.
+    forgotPasswordLink.addEventListener('click', function (event) {
         event.preventDefault();
         const email = document.getElementById('email').value;
 
         auth.sendPasswordResetEmail(email)
-            .then(function() {
+            .then(function () {
                 // Password reset email sent
                 alert("Password reset email sent. Please check your email inbox.");
             })
-            .catch(function(error) {
+            .catch(function (error) {
                 // An error occurred
                 console.error("Error sending password reset email:", error);
                 alert("Error sending password reset email. Please try again later.");

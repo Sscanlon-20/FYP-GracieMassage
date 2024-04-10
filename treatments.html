@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -21,13 +20,13 @@
                     <i class="large bars icon"></i>
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
-                        <div class="ui simple dropdown item">
-                            <a class="item" href="about.html">
+                        <div id="dropdown" class="ui simple dropdown item">
+                            <a class="active item" href="about.html">
                                 <span>About</span></a>
                             <div class="menu">
                                 <a class="item" href="sports-massage.html">Sports Massage</a>
                                 <a class="item" href="after-care.html">After Care</a>
-                                <a class="active item" href="treatments.html">Treatments</a>
+                                <a class="item" href="treatments.html">Treatments</a>
                                 <a class="item" href="prices.html">Prices</a>
                             </div>
                         </div>
@@ -35,13 +34,16 @@
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
                         <a href="contact.html">Contact</a>
-                        <a id="top-account-tab" class="item" href="#">Account</a>
                     </div>
                 </a>
             </div>
+
             <div class="two wide column">
-                <i class="large user icon"></i>
+                <a id="top-account-icon" class="item" href="#">
+                    <i class="large user icon"></i>
+                </a>
             </div>
+
             <div class="eight wide column">
                 <a href="index.html">
                     <h3 id="head">Gracie Massage</h3>
@@ -49,7 +51,8 @@
             </div>
             <div class="two wide column">
                 <a class="item">
-                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
+                       rel="noopener noreferrer">
                         <i class="large facebook square icon"></i></a>
                 </a>
             </div>
@@ -74,13 +77,13 @@
 
         <div class="right menu">
             <a href="index.html" class="item">Home</a>
-            <div class="ui simple dropdown item">
+            <div class="ui simple dropdown item" id="dropdown2">
                 <span>About</span>
                 <div class="menu">
-                    <a class="item" href="about.html">About</a>
+                    <a class="active item" href="about.html">About</a>
                     <a class="item" href="sports-massage.html">Sports Massage</a>
                     <a class="item" href="after-care.html">After Care</a>
-                    <a class="active item" href="treatments.html">Treatments</a>
+                    <a class="item" href="treatments.html">Treatments</a>
                     <a class="item" href="prices.html">Prices</a>
                 </div>
             </div>
@@ -89,18 +92,24 @@
                href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                target="_blank" rel="noopener noreferrer">Book Now</a>
             <a href="contact.html" class="item">Contact</a>
-            <a id="bottom-account-tab" class="item" href="#">Account</a>
+
+            <a id="bottom-account-icon" class="item" href="#">
+                <i class="large user icon account"></i>
+            </a>
+
             <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
         </div>
     </div>
-
 </header>
 
 <!-- CONTENT -->
 <div class="treatment-content">
     <h1 id="treatment-heading">Treatments</h1>
+    <!-- Carousel for displaying treatment details -->
     <div id="carouselControls" class="carousel slide carousel-fade">
         <div class="carousel-inner">
+
+            <!-- First treatment item -->
             <div class="carousel-item active">
                 <div class="row">
                     <div class="col">
@@ -108,52 +117,75 @@
                              alt="First slide">
                     </div>
                     <div class="col">
+                        <!-- Container for treatment text -->
                         <div class="text-container-sports">
                             <h3 class=" heading treatments">Sports Massage</h3>
                             <p>A sports massage is customised to meet the individual needs of clients, employing diverse
                                 techniques and movements aimed at optimizing performance and reducing the risk of injury
                                 or discomfort. Its advantages encompass enhanced flexibility and range of motion,
                                 alleviated muscle tension, improved overall well-being, reduced anxiety, better quality
-                                sleep, improved circulation, and the elimination of toxins from muscles. In addition to its physical
-                                benefits, a sports massage also provides mental and emotional advantages. By reducing anxiety and
-                                promoting relaxation, it helps athletes and active individuals better manage stress and maintain focus.
-                                Furthermore, the improved quality of sleep that often accompanies regular sports massage sessions
-                                contributes to overall recovery and rejuvenation. The release of toxins from the muscles not only aids
-                                in physical recovery but also enhances mental clarity and alertness. Overall, sports massage offers a
-                                holistic approach to well-being, addressing both the physical and psychological aspects of performance
+                                sleep, improved circulation, and the elimination of toxins from muscles. In addition to
+                                its physical
+                                benefits, a sports massage also provides mental and emotional advantages. By reducing
+                                anxiety and
+                                promoting relaxation, it helps athletes and active individuals better manage stress and
+                                maintain focus.
+                                Furthermore, the improved quality of sleep that often accompanies regular sports massage
+                                sessions
+                                contributes to overall recovery and rejuvenation. The release of toxins from the muscles
+                                not only aids
+                                in physical recovery but also enhances mental clarity and alertness. Overall, sports
+                                massage offers a
+                                holistic approach to well-being, addressing both the physical and psychological aspects
+                                of performance
                                 and health.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Button for booking -->
                 <div class="row book-button">
                     <div class="col-2">
-                        <a href=https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
+                        <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-block">BOOK NOW</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Second treatment item -->
             <div class="carousel-item">
                 <div class="row">
                     <div class="col">
                         <img class="d-block w-100 img-container" src="images/treatments/head.png" alt="Second slide">
                     </div>
                     <div class="col">
+                        <!-- Container for treatment text -->
                         <div class="text-container-hns">
                             <h3 class="heading treatments">Head, Neck & Shoulders</h3>
-                            <p>A head, neck, and shoulder massage is a specialised treatment tailored to address tension and discomfort in
-                                these commonly problematic areas. Through a blend of gentle to firm pressure techniques, this massage
-                                targets muscle tightness and stiffness. Beyond inducing deep relaxation and stress relief, this massage
-                                modality boasts a wide array of benefits. By targeting tension headaches and reducing neck and shoulder
-                                pain, it helps individuals find relief from chronic discomfort. Moreover, it enhances flexibility and range
-                                of motion in the neck and shoulder muscles, which is particularly beneficial for those with sedentary
-                                lifestyles or desk-bound jobs. Improved blood circulation is another significant advantage, as it
-                                facilitates the delivery of oxygen and nutrients to tissues while aiding in the removal of metabolic waste
-                                products. Ultimately, a head, neck, and shoulder massage offer more than just physical benefits; it
-                                fosters an overall sense of well-being, rejuvenation, and balance, making it a valuable component of
+                            <p>A head, neck, and shoulder massage is a specialised treatment tailored to address tension
+                                and discomfort in
+                                these commonly problematic areas. Through a blend of gentle to firm pressure techniques,
+                                this massage
+                                targets muscle tightness and stiffness. Beyond inducing deep relaxation and stress
+                                relief, this massage
+                                modality boasts a wide array of benefits. By targeting tension headaches and reducing
+                                neck and shoulder
+                                pain, it helps individuals find relief from chronic discomfort. Moreover, it enhances
+                                flexibility and range
+                                of motion in the neck and shoulder muscles, which is particularly beneficial for those
+                                with sedentary
+                                lifestyles or desk-bound jobs. Improved blood circulation is another significant
+                                advantage, as it
+                                facilitates the delivery of oxygen and nutrients to tissues while aiding in the removal
+                                of metabolic waste
+                                products. Ultimately, a head, neck, and shoulder massage offer more than just physical
+                                benefits; it
+                                fosters an overall sense of well-being, rejuvenation, and balance, making it a valuable
+                                component of
                                 holistic health and wellness practices.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Button for booking -->
                 <div class="row book-button">
                     <div class="col-2">
                         <a href=https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
@@ -161,6 +193,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Third treatment item -->
             <div class="carousel-item">
                 <div class="row">
                     <div class="col">
@@ -170,19 +204,28 @@
                         </div>
                     </div>
                     <div class="col">
+                        <!-- Container for treatment text -->
                         <div class="text-container-bns">
                             <h3 class="heading treatments">Back, Neck and Shoulders</h3>
-                            <p>A meticulously tailored therapy, the back, neck, and shoulders massage is a holistic approach that
-                                carefully targets tension hotspots in the upper body, aiming to alleviate discomfort and enhance overall
-                                well-being. Through a diverse range of specialized techniques, this modality not only addresses muscle
-                                tightness with precision but also improves circulation, inducing deep relaxation. Its benefits extend beyond
-                                the physical realm, impacting mental and emotional health by relieving stress, reducing anxiety, and promoting
-                                a sense of tranquility and balance. By prioritizing areas prone to stress and strain, such as the back,
-                                neck, and shoulders, this massage serves as a cornerstone of holistic health practices, offering individuals
+                            <p>A meticulously tailored therapy, the back, neck, and shoulders massage is a holistic
+                                approach that
+                                carefully targets tension hotspots in the upper body, aiming to alleviate discomfort and
+                                enhance overall
+                                well-being. Through a diverse range of specialized techniques, this modality not only
+                                addresses muscle
+                                tightness with precision but also improves circulation, inducing deep relaxation. Its
+                                benefits extend beyond
+                                the physical realm, impacting mental and emotional health by relieving stress, reducing
+                                anxiety, and promoting
+                                a sense of tranquility and balance. By prioritizing areas prone to stress and strain,
+                                such as the back,
+                                neck, and shoulders, this massage serves as a cornerstone of holistic health practices,
+                                offering individuals
                                 a comprehensive pathway to rejuvenation, vitality, and lasting wellness.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Button for booking -->
                 <div class="row book-button">
                     <div class="col-2">
                         <a href=https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
@@ -190,6 +233,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Fourth treatment item -->
             <div class="carousel-item">
                 <div class="row">
                     <div class="col">
@@ -197,22 +242,33 @@
                              alt="Forth slide">
                     </div>
                     <div class="col">
+                        <!-- Container for treatment text -->
                         <div class="text-container-ha">
                             <h3 class="heading treatments">Hands and Arms Massage</h3>
-                            <p>An arm massage is a soothing therapy renowned for its ability to provide profound relief from stress, pain,
-                                and discomfort specifically targeting the arms, hands, and wrists. Beyond its immediate benefits, this
-                                massage serves as a comprehensive solution for addressing issues such as arthritis and poor
-                                blood circulation, thus promoting overall well-being and enhancing quality of life. By improving blood
-                                flow to these areas, it swiftly eases discomfort associated with sprains and strains, fostering expedited
-                                recovery and comfort. Through the application of varying pressure levels, from gentle strokes to deeper
-                                kneading, an arm massage induces relaxation while easing muscle tension and pain, Moreover, its therapeutic
-                                effects extend beyond the physical realm, as it boosts circulation and stimulates the nervous system,
-                                contributing to a profound sense of rejuvenation and vitality. In essence, an arm massage stands as a
+                            <p>An arm massage is a soothing therapy renowned for its ability to provide profound relief
+                                from stress, pain,
+                                and discomfort specifically targeting the arms, hands, and wrists. Beyond its immediate
+                                benefits, this
+                                massage serves as a comprehensive solution for addressing issues such as arthritis and
+                                poor
+                                blood circulation, thus promoting overall well-being and enhancing quality of life. By
+                                improving blood
+                                flow to these areas, it swiftly eases discomfort associated with sprains and strains,
+                                fostering expedited
+                                recovery and comfort. Through the application of varying pressure levels, from gentle
+                                strokes to deeper
+                                kneading, an arm massage induces relaxation while easing muscle tension and pain,
+                                Moreover, its therapeutic
+                                effects extend beyond the physical realm, as it boosts circulation and stimulates the
+                                nervous system,
+                                contributing to a profound sense of rejuvenation and vitality. In essence, an arm
+                                massage stands as a
                                 holistic practice, offering individuals an approach to wellness that addresses both
                                 physical and emotional well-being with care and precision.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Button for booking -->
                 <div class="row book-button">
                     <div class="col-2">
                         <a href=https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
@@ -220,28 +276,41 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Fifth treatment item -->
             <div class="carousel-item">
                 <div class="row">
                     <div class="col">
                         <img class="d-block w-100 img-container" src="images/treatments/legsFeet.png" alt="Fifth slide">
                     </div>
                     <div class="col">
+                        <!-- Container for treatment text -->
                         <div class="text-container-ha">
                             <h3 class="heading treatments">Legs and Feet Massage</h3>
-                            <p>Massage therapy for legs and feet is an approach that plays a crucial role in aiding recovery
-                                from injuries while maintaining strength and flexibility in these crucial areas of the body.
-                                This treatment not only targets specific muscle groups but also helps prevent common sports-related
+                            <p>Massage therapy for legs and feet is an approach that plays a crucial role in aiding
+                                recovery
+                                from injuries while maintaining strength and flexibility in these crucial areas of the
+                                body.
+                                This treatment not only targets specific muscle groups but also helps prevent common
+                                sports-related
                                 injuries by promoting proper alignment and enhancing overall mobility. It serves as an
-                                effective tool in relieving muscle fatigue, ensuring optimal performance. Through the application of
-                                various techniques, ranging from light pressure to firm pressure massage therapy stimulates the nervous
-                                system and improves circulation, thereby facilitating the body's natural healing processes. By customising
-                                the treatment to address individual needs and preferences, this therapy offers benefits that extend beyond
-                                the physical realm, fostering a sense of well-being and promoting overall vitality. In essence, massage
-                                therapy for legs and feet stands as a cornerstone of holistic health practices, providing individuals
+                                effective tool in relieving muscle fatigue, ensuring optimal performance. Through the
+                                application of
+                                various techniques, ranging from light pressure to firm pressure massage therapy
+                                stimulates the nervous
+                                system and improves circulation, thereby facilitating the body's natural healing
+                                processes. By customising
+                                the treatment to address individual needs and preferences, this therapy offers benefits
+                                that extend beyond
+                                the physical realm, fostering a sense of well-being and promoting overall vitality. In
+                                essence, massage
+                                therapy for legs and feet stands as a cornerstone of holistic health practices,
+                                providing individuals
                                 with a comprehensive pathway to recovery, resilience, and enduring wellness.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Button for booking -->
                 <div class="row book-button">
                     <div class="col-2">
                         <a href=https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
@@ -249,28 +318,42 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Sixth treatment item -->
             <div class="carousel-item">
                 <div class="row">
                     <div class="col">
                         <img class="d-block w-100 img-container" src="images/treatments/swedish.png" alt="Sixth slide">
                     </div>
                     <div class="col">
+                        <!-- Container for treatment text -->
                         <div class="text-container-swedish">
                             <h3 class="heading treatments">Swedish Massage</h3>
-                            <p>Swedish massage, ia a treatment for the entire body, it targets soft tissues and muscles to promote
-                                overall health while fostering a sense of calm and balance within the nervous system. During a Swedish
-                                massage session, This massage offers a multitude of benefits. Firstly, it eases muscular strain
-                                by effectively flushing out toxins accumulated within the tissues. Secondly, it enhances blood circulation
-                                throughout the body, promoting the delivery of vital nutrients and oxygen to cells while aiding in the
-                                removal of metabolic waste products. Additionally, Swedish massage is highly effective in reducing both
-                                emotional and physical stress. Furthermore, Swedish massage is known to alleviate back pain and chronic
-                                pain by releasing tension and promoting relaxation in the affected muscles. Lastly, this therapy helps
-                                maintain the suppleness of ligaments and tendons, thereby improving overall flexibility and range of motion.
-                                In essence, Swedish massage offers a holistic approach to well-being, addressing both physical and mental
+                            <p>Swedish massage, ia a treatment for the entire body, it targets soft tissues and muscles
+                                to promote
+                                overall health while fostering a sense of calm and balance within the nervous system.
+                                During a Swedish
+                                massage session, This massage offers a multitude of benefits. Firstly, it eases muscular
+                                strain
+                                by effectively flushing out toxins accumulated within the tissues. Secondly, it enhances
+                                blood circulation
+                                throughout the body, promoting the delivery of vital nutrients and oxygen to cells while
+                                aiding in the
+                                removal of metabolic waste products. Additionally, Swedish massage is highly effective
+                                in reducing both
+                                emotional and physical stress. Furthermore, Swedish massage is known to alleviate back
+                                pain and chronic
+                                pain by releasing tension and promoting relaxation in the affected muscles. Lastly, this
+                                therapy helps
+                                maintain the suppleness of ligaments and tendons, thereby improving overall flexibility
+                                and range of motion.
+                                In essence, Swedish massage offers a holistic approach to well-being, addressing both
+                                physical and mental
                                 health concerns while nurturing a sense of harmony and vitality.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Button for booking -->
                 <div class="row book-button">
                     <div class="col-2">
                         <a href=https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
@@ -278,6 +361,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Seventh treatment item -->
             <div class="carousel-item">
                 <div class="row">
                     <div class="col">
@@ -285,22 +370,34 @@
                              alt="Seventh slide">
                     </div>
                     <div class="col">
+                        <!-- Container for treatment text -->
                         <div class="text-container-cupping">
                             <h3 class="heading treatments">Cupping Massage</h3>
-                            <p>One of primary advantages of cupping is the enhancement of blood circulation, which occurs as a result of the
-                                suction created by the cups. This increased circulation not only alleviates muscle tension but also facilitates
-                                better oxygenation and nutrient delivery to tissues, fostering cell repair and regeneration. Moreover,
-                                cupping therapy is believed to promote the formation of new connective tissues and blood vessels. This
-                                can be particularly beneficial for individuals recovering from injuries or dealing with chronic
-                                conditions. Another significant aspect of cupping therapy is its ability to assist in the elimination of
-                                toxins from the body through the lymphatic system. By encouraging lymphatic drainage, cupping helps rid
-                                tissues of metabolic waste and environmental toxins, supporting the body's detoxification mechanisms and
-                                promoting overall health. Furthermore, cupping has been associated with improvements in skin health.
-                                The increased circulation to the skin's surface can enhance its tone, texture, and elasticity, while also
+                            <p>One of primary advantages of cupping is the enhancement of blood circulation, which
+                                occurs as a result of the
+                                suction created by the cups. This increased circulation not only alleviates muscle
+                                tension but also facilitates
+                                better oxygenation and nutrient delivery to tissues, fostering cell repair and
+                                regeneration. Moreover,
+                                cupping therapy is believed to promote the formation of new connective tissues and blood
+                                vessels. This
+                                can be particularly beneficial for individuals recovering from injuries or dealing with
+                                chronic
+                                conditions. Another significant aspect of cupping therapy is its ability to assist in
+                                the elimination of
+                                toxins from the body through the lymphatic system. By encouraging lymphatic drainage,
+                                cupping helps rid
+                                tissues of metabolic waste and environmental toxins, supporting the body's
+                                detoxification mechanisms and
+                                promoting overall health. Furthermore, cupping has been associated with improvements in
+                                skin health.
+                                The increased circulation to the skin's surface can enhance its tone, texture, and
+                                elasticity, while also
                                 aiding in the removal of impurities and promoting a healthy glow.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Button for booking -->
                 <div class="row book-button">
                     <div class="col-2">
                         <a href=https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
@@ -308,6 +405,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Eighth treatment item -->
             <div class="carousel-item">
                 <div class="row">
                     <div class="col">
@@ -315,22 +414,34 @@
                              alt="Eight slide">
                     </div>
                     <div class="col">
+                        <!-- Container for treatment text -->
                         <div class="text-container-aroma">
                             <h3 class="heading treatments">Aromatherapy Massage</h3>
-                            <p>The AromaTouch Technique is a remarkable fusion of human touch and essential oils, carefully curated for
-                                their aromatic qualities. These therapeutic essential oils and rhythmic touch to evoke a profound
-                                sense of relaxation, thereby easing feelings of anxiety and stress. This unique technique is
-                                designed not only to soothe the mind but also to benefit the body. Research suggests that the AromaTouch
-                                Technique has the potential to lower blood pressure, cortisol levels, and heart rate, contributing to
-                                overall cardiovascular health and stress reduction. Each essential oil used in the AromaTouch Technique
-                                is selected for its specific properties, such as calming lavender, invigorating peppermint, and grounding
-                                frankincense, among others. When combined with the power of human touch, these oils work to create a
-                                deeply therapeutic experience. By incorporating the AromaTouch Technique into one's wellness routine,
-                                individuals may experience not only immediate relaxation but also long-term benefits for their physical
+                            <p>The AromaTouch Technique is a remarkable fusion of human touch and essential oils,
+                                carefully curated for
+                                their aromatic qualities. These therapeutic essential oils and rhythmic touch to evoke a
+                                profound
+                                sense of relaxation, thereby easing feelings of anxiety and stress. This unique
+                                technique is
+                                designed not only to soothe the mind but also to benefit the body. Research suggests
+                                that the AromaTouch
+                                Technique has the potential to lower blood pressure, cortisol levels, and heart rate,
+                                contributing to
+                                overall cardiovascular health and stress reduction. Each essential oil used in the
+                                AromaTouch Technique
+                                is selected for its specific properties, such as calming lavender, invigorating
+                                peppermint, and grounding
+                                frankincense, among others. When combined with the power of human touch, these oils work
+                                to create a
+                                deeply therapeutic experience. By incorporating the AromaTouch Technique into one's
+                                wellness routine,
+                                individuals may experience not only immediate relaxation but also long-term benefits for
+                                their physical
                                 and emotional well-being.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Button for booking -->
                 <div class="row book-button">
                     <div class="col-2">
                         <a href=https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
@@ -338,6 +449,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Ninth treatment item -->
             <div class="carousel-item">
                 <div class="row">
                     <div class="col">
@@ -345,24 +458,33 @@
                              alt="Ninth slide">
                     </div>
                     <div class="col">
+                        <!-- Container for treatment text -->
                         <div class="text-container-aroma">
                             <h3 class="heading treatments">Rejuvenating Massage</h3>
-                            <p>Massage therapy is renowned for its rejuvenating effects, offering a myriad of benefits for the mind, body,
+                            <p>Massage therapy is renowned for its rejuvenating effects, offering a myriad of benefits
+                                for the mind, body,
                                 and spirit. However, this form of massage elevates the rejuvenation experience by
-                                incorporating a carefully crafted blend of essential oils, each possessing unique properties aimed at
+                                incorporating a carefully crafted blend of essential oils, each possessing unique
+                                properties aimed at
                                 enhancing overall well-being. The therapeutic power of touch is complemented by the
-                                aromatic essence of essential oils, carefully selected for their rejuvenating qualities. It's important
-                                to note that while these essential oils offer a multitude of benefits for holistic well-being, they are
-                                not intended to cure, heal, or treat any specific conditions. Rather, they serve as powerful tools for
-                                enhancing relaxation, promoting mental clarity, and restoring harmony to the mind, body, and spirit.
+                                aromatic essence of essential oils, carefully selected for their rejuvenating qualities.
+                                It's important
+                                to note that while these essential oils offer a multitude of benefits for holistic
+                                well-being, they are
+                                not intended to cure, heal, or treat any specific conditions. Rather, they serve as
+                                powerful tools for
+                                enhancing relaxation, promoting mental clarity, and restoring harmony to the mind, body,
+                                and spirit.
 
-                                <br><b>Oils used:</b> <em style="color: #01b79f;">Rosemary</em> for mental stimulation, clarity and
+                                <br><b>Oils used:</b> <em style="color: #01b79f;">Rosemary</em> for mental stimulation,
+                                clarity and
                                 memory, <em style="color: #01b79f;">Ravensara</em> may offer cleansing, rejuvenating and
                                 soothing sensation for muscle tension and <em style="color: #01b79f;">Patchouli</em>
                                 Known for its grounding earthy properties.</p>
                         </div>
                     </div>
                 </div>
+                <!-- Button for booking -->
                 <div class="row book-button">
                     <div class="col-2">
                         <a href=https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
@@ -370,6 +492,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Tenth treatment item -->
             <div class="carousel-item">
                 <div class="row">
                     <div class="col">
@@ -377,20 +501,29 @@
                              alt="Tenth slide">
                     </div>
                     <div class="col">
+                        <!-- Container for treatment text -->
                         <div class="text-container-aroma">
                             <h3 class="heading treatments">Energising Full Body Massage</h3>
                             <p>This invigorating massage harnesses the revitalising uses a carefully curated blend of
-                                essential oils, combined with the therapeutic benefits of gentle to medium pressure touch.
-                                Studies indicate that these oils possess remarkable properties that can not only enhance energy
-                                levels but also ease fatigue, offering a holistic solution for rejuvenation and vitality.
+                                essential oils, combined with the therapeutic benefits of gentle to medium pressure
+                                touch.
+                                Studies indicate that these oils possess remarkable properties that can not only enhance
+                                energy
+                                levels but also ease fatigue, offering a holistic solution for rejuvenation and
+                                vitality.
 
-                                <b>Oils used:</b> <em style="color: #01b79f;">Bergamot</em> renowned for its refreshing citrus
+                                <b>Oils used:</b> <em style="color: #01b79f;">Bergamot</em> renowned for its refreshing
+                                citrus
                                 aroma, is celebrated for its mood-enhancing effects.
-                                <em style="color: #01b79f;">Eucalyptus</em> with its cooling and refreshing fragrance, is revered for
-                                its invigorating properties. Known for its ability to clear the mind and enhance mental focus,
+                                <em style="color: #01b79f;">Eucalyptus</em> with its cooling and refreshing fragrance,
+                                is revered for
+                                its invigorating properties. Known for its ability to clear the mind and enhance mental
+                                focus,
                                 Eucalyptus oil offers a burst of energy, awakening the senses and revitalizing the body.
-                                <em style="color: #01b79f;">Wild Orange oil,</em> with its sweet and uplifting aroma, is prized for its
-                                energizing and mood-boosting effects. Rich in antioxidants, Wild Orange oil helps to combat fatigue
+                                <em style="color: #01b79f;">Wild Orange oil,</em> with its sweet and uplifting aroma, is
+                                prized for its
+                                energizing and mood-boosting effects. Rich in antioxidants, Wild Orange oil helps to
+                                combat fatigue
                                 and promote well-being.
 
                                 <br><small> *Due to photosensitivity, Wild Orange and Bergamot oils will be diluted and
@@ -399,6 +532,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- Button for booking -->
                 <div class="row book-button">
                     <div class="col-2">
                         <a href=https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
@@ -408,13 +542,17 @@
             </div>
         </div>
 
-
+        <!-- Navigation controls for the carousel -->
         <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+            <!-- Icon for previous slide -->
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- Screen reader text for previous slide -->
             <span class="sr-only">Previous</span>
         </a>
         <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+            <!-- Icon for next slide -->
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <!-- Screen reader text for next slide -->
             <span class="sr-only">Next</span>
         </a>
     </div>
@@ -422,20 +560,24 @@
 
 <!-- FOOTER -->
 <footer>
+    <!-- Top footer section with contact information -->
     <div id="topFooter">
         <div class="ui grid">
+            <!-- Column for phone contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="phone square icon custom-icon-color"></i>
                     <a class="footer-text" href="tel:+353892169781">CALL NOW</a>
                 </div>
             </div>
+            <!-- Column for email contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="envelope icon custom-icon-color"></i>
                     <a class="footer-text" href="mailto:graciemassage@gmail.com">E-MAIL</a>
                 </div>
             </div>
+            <!-- Column for booking link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="calendar alternate icon custom-icon-color"></i>
@@ -444,6 +586,7 @@
                        target="_blank" rel="noopener noreferrer">BOOK NOW</a>
                 </div>
             </div>
+            <!-- Column for shopping link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="shopping bag icon custom-icon-color"></i>
@@ -452,8 +595,10 @@
             </div>
         </div>
     </div>
+    <!-- Bottom footer section with company information and social media links -->
     <div id="bottomFooter">
         <div class="ui grid">
+            <!-- Column for company logo -->
             <div class="four wide column">
                 <div>
                     <a href="index.html">
@@ -461,6 +606,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Column for terms and conditions links -->
             <div class="four wide column">
                 <div>
                     <ul class="tcs">
@@ -470,6 +616,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- Column for company address -->
             <div class="four wide column address">
                 <div>
                     <p>Trá Beo,<br>
@@ -478,6 +625,7 @@
                         X91 C6RV</p>
                 </div>
             </div>
+            <!-- Column for social media icons and external links -->
             <div class="four wide column">
                 <div class="item">
                     <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
@@ -486,7 +634,6 @@
                     <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer">
                         <i class="huge instagram icon social-icon"></i></a>
                 </div>
-                <!-- Logo image -->
                 <a href="https://www.trabeo.ie" target="_blank" rel="noopener noreferrer">
                     <img class="trabeo" src="images/logos/trabeo.png" alt="Logo">
                 </a>
@@ -495,9 +642,13 @@
     </div>
 </footer>
 
+<!-- Script links -->
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/firebase/firebase-account.js"></script>
 </body>
 </html>

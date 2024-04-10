@@ -19,9 +19,9 @@
                     <i class="large bars icon"></i>
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
-                        <div class="ui simple dropdown item">
-                            <a class="item" href="about.html">
-                            <span>About</span></a>
+                        <div id="dropdown" class="ui simple dropdown item">
+                            <a class="active item" href="about.html">
+                                <span>About</span></a>
                             <div class="menu">
                                 <a class="item" href="sports-massage.html">Sports Massage</a>
                                 <a class="item" href="after-care.html">After Care</a>
@@ -32,14 +32,17 @@
                         <a href="#">Shop</a>
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
-                        <a href="contact.html" class="active item">Contact</a>
-                        <a id="top-account-tab" class="item" href="#">Account</a>
+                        <a href="contact.html">Contact</a>
                     </div>
                 </a>
             </div>
+
             <div class="two wide column">
-                <i class="large user icon"></i>
+                <a id="top-account-icon" class="item" href="#">
+                    <i class="large user icon"></i>
+                </a>
             </div>
+
             <div class="eight wide column">
                 <a href="index.html">
                     <h3 id="head">Gracie Massage</h3>
@@ -47,7 +50,8 @@
             </div>
             <div class="two wide column">
                 <a class="item">
-                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
+                       rel="noopener noreferrer">
                         <i class="large facebook square icon"></i></a>
                 </a>
             </div>
@@ -68,14 +72,14 @@
                 </a>
                 <p>Promoting Wellness Through Massage</p>
             </div>
-            </div>
+        </div>
 
         <div class="right menu">
             <a href="index.html" class="item">Home</a>
-            <div class="ui simple dropdown item">
+            <div class="ui simple dropdown item" id="dropdown2">
                 <span>About</span>
                 <div class="menu">
-                    <a class="item" href="about.html">About</a>
+                    <a class="active item" href="about.html">About</a>
                     <a class="item" href="sports-massage.html">Sports Massage</a>
                     <a class="item" href="after-care.html">After Care</a>
                     <a class="item" href="treatments.html">Treatments</a>
@@ -86,51 +90,62 @@
             <a class="item"
                href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                target="_blank" rel="noopener noreferrer">Book Now</a>
-            <a href="contact.html" class="active item">Contact</a>
-            <a id="bottom-account-tab" class="item" href="#">Account</a>
+            <a href="contact.html" class="item">Contact</a>
+
+            <a id="bottom-account-icon" class="item" href="#">
+                <i class="large user icon account"></i>
+            </a>
+
             <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
         </div>
     </div>
-
 </header>
 
 <!-- CONTENT -->
 <div class="content">
     <div class="ui grid">
+        <!-- Contact form column -->
         <div id="form" class="eight wide column">
             <h1 class="heading-contact">Contact Us</h1>
 
+            <!-- Contact form -->
             <form id="contact-form" class="ui form">
                 <div class="field">
                     <label>First Name
-                    <input type="text" name="name" placeholder="First Name" required>
+                        <input type="text" name="name" placeholder="First Name" required>
                     </label>
                 </div>
                 <div class="field">
                     <label>E-mail
-                    <input type="email" name="email" placeholder="jane@doe.com" required>
+                        <input type="email" name="email" placeholder="jane@doe.com" required>
                     </label>
                 </div>
                 <div class="field">
                     <label>Message
-                    <textarea name="message" rows="3" required></textarea>
+                        <textarea name="message" rows="3" required></textarea>
                     </label>
                 </div>
                 <button class="ui button greyButton" type="submit">Submit</button>
             </form>
         </div>
 
+        <!-- Map column -->
         <div id="map-container" class="eight wide column">
+            <!-- Google Maps embed -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.183984597215!2d-7.136276223794042!3d52.16734826227946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4842c327988bf6a9%3A0x85fc3ba7afa8f964!2sGracie%20Massage!5e0!3m2!1sen!2sie!4v1707930749505!5m2!1sen!2sie"
-                    width= "700" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="700" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade">
             </iframe>
         </div>
     </div>
+
+    <!-- Additional contact information -->
     <div class="ui grid">
         <div class="four wide column">
-            <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank" rel="noopener noreferrer">><i class="massive facebook square icon"></i></a>
-            <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer"><i class="massive instagram icon insta"></i></a>
+            <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank" rel="noopener noreferrer"><i
+                    class="massive facebook square icon"></i></a>
+            <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer"><i
+                    class="massive instagram icon insta"></i></a>
         </div>
         <div class="four wide column trabeo1">
             <a href="https://www.trabeo.ie" target="_blank" rel="noopener noreferrer">
@@ -155,20 +170,24 @@
 
 <!-- FOOTER -->
 <footer>
+    <!-- Top footer section with contact information -->
     <div id="topFooter">
         <div class="ui grid">
+            <!-- Column for phone contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="phone square icon custom-icon-color"></i>
                     <a class="footer-text" href="tel:+353892169781">CALL NOW</a>
                 </div>
             </div>
+            <!-- Column for email contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="envelope icon custom-icon-color"></i>
                     <a class="footer-text" href="mailto:graciemassage@gmail.com">E-MAIL</a>
                 </div>
             </div>
+            <!-- Column for booking link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="calendar alternate icon custom-icon-color"></i>
@@ -177,6 +196,7 @@
                        target="_blank" rel="noopener noreferrer">BOOK NOW</a>
                 </div>
             </div>
+            <!-- Column for shopping link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="shopping bag icon custom-icon-color"></i>
@@ -185,8 +205,10 @@
             </div>
         </div>
     </div>
+    <!-- Bottom footer section with company information and social media links -->
     <div id="bottomFooter">
         <div class="ui grid">
+            <!-- Column for company logo -->
             <div class="four wide column">
                 <div>
                     <a href="index.html">
@@ -194,6 +216,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Column for terms and conditions links -->
             <div class="four wide column">
                 <div>
                     <ul class="tcs">
@@ -203,6 +226,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- Column for company address -->
             <div class="four wide column address">
                 <div>
                     <p>Trá Beo,<br>
@@ -211,6 +235,7 @@
                         X91 C6RV</p>
                 </div>
             </div>
+            <!-- Column for social media icons and external links -->
             <div class="four wide column">
                 <div class="item">
                     <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
@@ -219,7 +244,6 @@
                     <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer">
                         <i class="huge instagram icon social-icon"></i></a>
                 </div>
-                <!-- Logo image -->
                 <a href="https://www.trabeo.ie" target="_blank" rel="noopener noreferrer">
                     <img class="trabeo" src="images/logos/trabeo.png" alt="Logo">
                 </a>
@@ -228,10 +252,13 @@
     </div>
 </footer>
 
-
+<!-- Script links -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="js/scripts.js"></script>
 <script src="js/firebase/firebase-form.js"></script>
+<script src="js/firebase/firebase-account.js"></script>
 </body>
 </html>

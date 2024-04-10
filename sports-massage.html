@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -20,11 +19,11 @@
                     <i class="large bars icon"></i>
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
-                        <div class="ui simple dropdown item">
-                            <a class="item" href="about.html">
+                        <div id="dropdown" class="ui simple dropdown item">
+                            <a class="active item" href="about.html">
                                 <span>About</span></a>
                             <div class="menu">
-                                <a class="active item" href="sports-massage.html">Sports Massage</a>
+                                <a class="item" href="sports-massage.html">Sports Massage</a>
                                 <a class="item" href="after-care.html">After Care</a>
                                 <a class="item" href="treatments.html">Treatments</a>
                                 <a class="item" href="prices.html">Prices</a>
@@ -34,13 +33,16 @@
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
                         <a href="contact.html">Contact</a>
-                        <a id="top-account-tab" class="item" href="#">Account</a>
                     </div>
                 </a>
             </div>
+
             <div class="two wide column">
-                <i class="large user icon"></i>
+                <a id="top-account-icon" class="item" href="#">
+                    <i class="large user icon"></i>
+                </a>
             </div>
+
             <div class="eight wide column">
                 <a href="index.html">
                     <h3 id="head">Gracie Massage</h3>
@@ -48,7 +50,8 @@
             </div>
             <div class="two wide column">
                 <a class="item">
-                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
+                       rel="noopener noreferrer">
                         <i class="large facebook square icon"></i></a>
                 </a>
             </div>
@@ -73,11 +76,11 @@
 
         <div class="right menu">
             <a href="index.html" class="item">Home</a>
-            <div class="ui simple dropdown item">
+            <div class="ui simple dropdown item" id="dropdown2">
                 <span>About</span>
                 <div class="menu">
-                    <a class="item" href="about.html">About</a>
-                    <a class="active item" href="sports-massage.html">Sports Massage</a>
+                    <a class="active item" href="about.html">About</a>
+                    <a class="item" href="sports-massage.html">Sports Massage</a>
                     <a class="item" href="after-care.html">After Care</a>
                     <a class="item" href="treatments.html">Treatments</a>
                     <a class="item" href="prices.html">Prices</a>
@@ -88,15 +91,19 @@
                href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                target="_blank" rel="noopener noreferrer">Book Now</a>
             <a href="contact.html" class="item">Contact</a>
-            <a id="bottom-account-tab" class="item" href="#">Account</a>
+
+            <a id="bottom-account-icon" class="item" href="#">
+                <i class="large user icon account"></i>
+            </a>
+
             <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
         </div>
     </div>
-
 </header>
 
 <!-- CONTENT -->
 <div class="content">
+    <!-- Container for images related to sports massage -->
     <div id="sm-images" class="ui grid">
         <div class="four wide column">
             <img src="images/back.png" alt="Gracie_massage">
@@ -111,21 +118,33 @@
             <img src="images/leg.png" alt="Gracie_massage">
         </div>
     </div>
+
+    <!-- Container for the description of sports massage -->
     <div class="sm-container">
+        <!-- Grid for the content related to sports massage -->
         <div class="ui grid sports-massage">
             <h1 class="heading">What is Sports Massage?</h1>
             <p class="text">
                 Sports Massage is a specialised therapeutic approach geared towards injury prevention and treatment,
-                offering personalized care tailored to individual needs, whether for athletes or active individuals. It encompasses
-                various techniques such as deep tissue massage, Swedish massage, stretching, and trigger point therapy to alleviate muscle
-                tension, enhance relaxation, and improve flexibility. This form of massage not only helps prevent injuries by addressing
-                areas of tension and promoting optimal muscle function but also contributes to overall physical health and well-being.
-                Regular sessions can lead to improved athletic performance, quicker recovery from workouts, reduced stress levels, and
-                better posture. Whether you're a professional athlete striving for peak performance or someone who enjoys regular physical
-                activity, incorporating sports massage into your wellness routine can be highly beneficial. It serves as a proactive measure
-                to maintain optimal physical health and minimize the risk of injuries, ensuring you can continue to pursue your fitness
+                offering personalized care tailored to individual needs, whether for athletes or active individuals. It
+                encompasses
+                various techniques such as deep tissue massage, Swedish massage, stretching, and trigger point therapy
+                to alleviate muscle
+                tension, enhance relaxation, and improve flexibility. This form of massage not only helps prevent
+                injuries by addressing
+                areas of tension and promoting optimal muscle function but also contributes to overall physical health
+                and well-being.
+                Regular sessions can lead to improved athletic performance, quicker recovery from workouts, reduced
+                stress levels, and
+                better posture. Whether you're a professional athlete striving for peak performance or someone who
+                enjoys regular physical
+                activity, incorporating sports massage into your wellness routine can be highly beneficial. It serves as
+                a proactive measure
+                to maintain optimal physical health and minimize the risk of injuries, ensuring you can continue to
+                pursue your fitness
                 goals with confidence.
             </p>
+            <!-- Subsection describing the purposes of sports massage -->
             <div>
                 <h2 class="sm-heading">What is it used for?</h2>
                 <ul class="sm-list">
@@ -142,52 +161,77 @@
         </div>
     </div>
 
+    <!-- Container for techniques used in sports massage -->
     <div class="sm-container">
+        <!-- Grid for the content related to sports massage techniques -->
         <div class="ui grid sports-massage">
             <h1 class="sm-heading">Techniques Used in Sports Massage</h1>
             <ul class="sm-list">
-                <li><span class="highlight">Effleurage-Flat and relaxed hand</span> - Generally done at the beginning and ending of massage.
-                    Helps warm the skin and prepare for deeper work.</li>
-                <li><span class="highlight">Petrissage a compression stroke</span> - Such as kneading to help break down tension, improve elasticity in the muscle,
-                    aids relaxation.</li>
-                <li><span class="highlight">Frictions</span> - A very deep technique, heavily stimulating on the blood flow.</li>
+                <li><span class="highlight">Effleurage-Flat and relaxed hand</span> - Generally done at the beginning
+                    and ending of massage.
+                    Helps warm the skin and prepare for deeper work.
+                </li>
+                <li><span class="highlight">Petrissage a compression stroke</span> - Such as kneading to help break down
+                    tension, improve elasticity in the muscle,
+                    aids relaxation.
+                </li>
+                <li><span class="highlight">Frictions</span> - A very deep technique, heavily stimulating on the blood
+                    flow.
+                </li>
                 <li><span class="highlight">Circular</span> - Helps with lubrication of joint membrane.</li>
-                <li><span class="highlight">Percussions</span> - These are invigorating strokes which will stimulate a muscle and mainly used over weekend
-                    atrophied muscles.</li>
-                <li><span class="highlight">Vibrations</span> - A shake to the muscle to aid with relaxation, loosen adhesions,
-                    generally used on calves and quadriceps.</li>
-                <li><span class="highlight">Neuromuscular techniques</span> - This provokes a reflex in the nervous system, helps muscle to relax,
-                    reduce spasms and pain.</li>
-                <li><span class="highlight">Soft tissue release</span> - Technique that improves flexibility in a localised area of muscle or tendon.</li>
-                <li><span class="highlight">Muscle energy technique</span> - Isometric contraction followed by a stretch,
-                    This technique inhibits the muscles spindles and Golgi tendon organs to allow an improvement in flexibility.</li>
-                <li><span class="highlight">Manual Lymphatic drainage</span> - To encourage deep and superficial lymphatic drainage,
-                    light deep strokes working towards the heart.</li>
-                <li><span class="highlight">Neuromuscular techniques</span> - This provokes a reflex in the nervous system, helps muscle to relax,
-                    reduce spasms and pain.</li>
-
+                <li><span class="highlight">Percussions</span> - These are invigorating strokes which will stimulate a
+                    muscle and mainly used over weekend
+                    atrophied muscles.
+                </li>
+                <li><span class="highlight">Vibrations</span> - A shake to the muscle to aid with relaxation, loosen
+                    adhesions,
+                    generally used on calves and quadriceps.
+                </li>
+                <li><span class="highlight">Neuromuscular techniques</span> - This provokes a reflex in the nervous
+                    system, helps muscle to relax,
+                    reduce spasms and pain.
+                </li>
+                <li><span class="highlight">Soft tissue release</span> - Technique that improves flexibility in a
+                    localised area of muscle or tendon.
+                </li>
+                <li><span class="highlight">Muscle energy technique</span> - Isometric contraction followed by a
+                    stretch,
+                    This technique inhibits the muscles spindles and Golgi tendon organs to allow an improvement in
+                    flexibility.
+                </li>
+                <li><span class="highlight">Manual Lymphatic drainage</span> - To encourage deep and superficial
+                    lymphatic drainage,
+                    light deep strokes working towards the heart.
+                </li>
+                <li><span class="highlight">Neuromuscular techniques</span> - This provokes a reflex in the nervous
+                    system, helps muscle to relax,
+                    reduce spasms and pain.
+                </li>
             </ul>
         </div>
     </div>
-
 </div>
 
 <!-- FOOTER -->
 <footer>
+    <!-- Top footer section with contact information -->
     <div id="topFooter">
         <div class="ui grid">
+            <!-- Column for phone contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="phone square icon custom-icon-color"></i>
                     <a class="footer-text" href="tel:+353892169781">CALL NOW</a>
                 </div>
             </div>
+            <!-- Column for email contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="envelope icon custom-icon-color"></i>
                     <a class="footer-text" href="mailto:graciemassage@gmail.com">E-MAIL</a>
                 </div>
             </div>
+            <!-- Column for booking link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="calendar alternate icon custom-icon-color"></i>
@@ -196,6 +240,7 @@
                        target="_blank" rel="noopener noreferrer">BOOK NOW</a>
                 </div>
             </div>
+            <!-- Column for shopping link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="shopping bag icon custom-icon-color"></i>
@@ -204,8 +249,10 @@
             </div>
         </div>
     </div>
+    <!-- Bottom footer section with company information and social media links -->
     <div id="bottomFooter">
         <div class="ui grid">
+            <!-- Column for company logo -->
             <div class="four wide column">
                 <div>
                     <a href="index.html">
@@ -213,6 +260,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Column for terms and conditions links -->
             <div class="four wide column">
                 <div>
                     <ul class="tcs">
@@ -222,6 +270,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- Column for company address -->
             <div class="four wide column address">
                 <div>
                     <p>Trá Beo,<br>
@@ -230,6 +279,7 @@
                         X91 C6RV</p>
                 </div>
             </div>
+            <!-- Column for social media icons and external links -->
             <div class="four wide column">
                 <div class="item">
                     <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
@@ -238,7 +288,6 @@
                     <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer">
                         <i class="huge instagram icon social-icon"></i></a>
                 </div>
-                <!-- Logo image -->
                 <a href="https://www.trabeo.ie" target="_blank" rel="noopener noreferrer">
                     <img class="trabeo" src="images/logos/trabeo.png" alt="Logo">
                 </a>
@@ -246,8 +295,13 @@
         </div>
     </div>
 </footer>
+
+<!-- Script links -->
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/firebase/firebase-account.js"></script>
 </body>
 </html>

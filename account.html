@@ -21,10 +21,10 @@
                     <i class="large bars icon"></i>
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
-                        <div class="ui simple dropdown item">
-                            <span>About</span>
+                        <div id="dropdown" class="ui simple dropdown item">
+                            <a class="active item" href="about.html">
+                                <span>About</span></a>
                             <div class="menu">
-                                <a class="item" href="about.html">About</a>
                                 <a class="item" href="sports-massage.html">Sports Massage</a>
                                 <a class="item" href="after-care.html">After Care</a>
                                 <a class="item" href="treatments.html">Treatments</a>
@@ -35,13 +35,16 @@
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
                         <a href="contact.html">Contact</a>
-                        <a id="top-account-tab" class="active item" href="#">Account</a>
                     </div>
                 </a>
             </div>
+
             <div class="two wide column">
-                <i class="large user icon"></i>
+                <a id="top-account-icon" class="item" href="#">
+                    <i class="large user icon"></i>
+                </a>
             </div>
+
             <div class="eight wide column">
                 <a href="index.html">
                     <h3 id="head">Gracie Massage</h3>
@@ -49,16 +52,15 @@
             </div>
             <div class="two wide column">
                 <a class="item">
-                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank" rel="noopener noreferrer">
-                        <i class="large facebook square icon"></i>
-                    </a>
+                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
+                       rel="noopener noreferrer">
+                        <i class="large facebook square icon"></i></a>
                 </a>
             </div>
             <div class="two wide column">
                 <a class="item">
                     <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer">
-                        <i class="large instagram icon"></i>
-                    </a>
+                        <i class="large instagram icon"></i></a>
                 </a>
             </div>
         </div>
@@ -76,10 +78,10 @@
 
         <div class="right menu">
             <a href="index.html" class="item">Home</a>
-            <div class="ui simple dropdown item">
+            <div class="ui simple dropdown item" id="dropdown2">
                 <span>About</span>
                 <div class="menu">
-                    <a class="item" href="about.html">About</a>
+                    <a class="active item" href="about.html">About</a>
                     <a class="item" href="sports-massage.html">Sports Massage</a>
                     <a class="item" href="after-care.html">After Care</a>
                     <a class="item" href="treatments.html">Treatments</a>
@@ -87,10 +89,15 @@
                 </div>
             </div>
             <a class="item">Shop</a>
-            <a class="item" href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893" target="_blank"
-               rel="noopener noreferrer">Book Now</a>
+            <a class="item"
+               href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
+               target="_blank" rel="noopener noreferrer">Book Now</a>
             <a href="contact.html" class="item">Contact</a>
-            <a id="bottom-account-tab" class="item" href="#">Account</a>
+
+            <a id="bottom-account-icon" class="item" href="#">
+                <i class="large user icon account"></i>
+            </a>
+
             <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
         </div>
     </div>
@@ -98,6 +105,7 @@
 
 <!-- CONTENT -->
 <div class="content">
+    <!-- Container for user account management -->
     <div class="account-container">
         <div class="content-account">
             <div class="container-account">
@@ -107,6 +115,7 @@
                 </div>
 
                 <h3 id="user">Add or Update Details</h3>
+                <!-- Form for adding or updating user details -->
                 <form id="user-info-form">
                     <div class="form-row">
                         <div class="form-group">
@@ -119,6 +128,7 @@
                         </div>
                     </div>
 
+                    <!-- Buttons for saving and logging out -->
                     <div>
                         <button type="button" id="save-btn">Save</button>
                     </div>
@@ -133,20 +143,24 @@
 
 <!-- FOOTER -->
 <footer>
+    <!-- Top footer section with contact information -->
     <div id="topFooter">
         <div class="ui grid">
+            <!-- Column for phone contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="phone square icon custom-icon-color"></i>
                     <a class="footer-text" href="tel:+353892169781">CALL NOW</a>
                 </div>
             </div>
+            <!-- Column for email contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="envelope icon custom-icon-color"></i>
                     <a class="footer-text" href="mailto:graciemassage@gmail.com">E-MAIL</a>
                 </div>
             </div>
+            <!-- Column for booking link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="calendar alternate icon custom-icon-color"></i>
@@ -155,6 +169,7 @@
                        target="_blank" rel="noopener noreferrer">BOOK NOW</a>
                 </div>
             </div>
+            <!-- Column for shopping link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="shopping bag icon custom-icon-color"></i>
@@ -163,8 +178,10 @@
             </div>
         </div>
     </div>
+    <!-- Bottom footer section with company information and social media links -->
     <div id="bottomFooter">
         <div class="ui grid">
+            <!-- Column for company logo -->
             <div class="four wide column">
                 <div>
                     <a href="index.html">
@@ -172,6 +189,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Column for terms and conditions links -->
             <div class="four wide column">
                 <div>
                     <ul class="tcs">
@@ -181,6 +199,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- Column for company address -->
             <div class="four wide column address">
                 <div>
                     <p>Trá Beo,<br>
@@ -189,6 +208,7 @@
                         X91 C6RV</p>
                 </div>
             </div>
+            <!-- Column for social media icons and external links -->
             <div class="four wide column">
                 <div class="item">
                     <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
@@ -197,7 +217,6 @@
                     <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer">
                         <i class="huge instagram icon social-icon"></i></a>
                 </div>
-                <!-- Logo image -->
                 <a href="https://www.trabeo.ie" target="_blank" rel="noopener noreferrer">
                     <img class="trabeo" src="images/logos/trabeo.png" alt="Logo">
                 </a>
@@ -206,13 +225,14 @@
     </div>
 </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-<script src="js/scripts.js"></script>
-<script SRC="js/firebase/firebase-auth.js"></script>
-<script SRC="js/firebase/firebase-users.js"></script>
+<!-- Script Links -->
 <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/firebase/firebase-auth.js"></script>
+<script src="js/firebase/firebase-users.js"></script>
 </body>
 </html>

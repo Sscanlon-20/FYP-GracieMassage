@@ -95,7 +95,7 @@ p {
     padding-bottom: 20px;
 }
 
-#leftHeader p{
+#leftHeader p {
     font-weight: bold;
 }
 
@@ -128,6 +128,10 @@ p {
 
 #menuIcon {
     position: relative;
+}
+
+.account {
+    color: #333333
 }
 
 /*FOOTER*/
@@ -305,13 +309,13 @@ label {
     text-align: center;
 }
 
-.hero-name{
+.hero-name {
     font-family: "Adelia", "Bodoni MT", serif;
     font-weight: bolder;
     font-size: xxx-large;
 }
 
-.hero-text{
+.hero-text {
     font-family: "Bodoni MT", Arial, sans-serif;
     font-weight: bolder;
     font-size: xx-large;
@@ -433,16 +437,16 @@ label {
     display: block;
 }
 
-#write-review-button{
-        background-color: #333333;
-        color: white;
-        padding: 15px;
-        width: fit-content;
-        margin: 50px 50px 20px auto;
-        display: block;
-    }
+#write-review-button {
+    background-color: #333333;
+    color: white;
+    padding: 15px;
+    width: fit-content;
+    margin: 50px 50px 20px auto;
+    display: block;
+}
 
-.rating-heading{
+.rating-heading {
     color: white;
     font-weight: bold;
     font-family: "Bodoni MT", serif;
@@ -453,7 +457,7 @@ label {
 }
 
 #read-more-button:hover,
-#write-review-button:hover{
+#write-review-button:hover {
     background-color: white;
     color: #333333;
 }
@@ -623,20 +627,20 @@ label {
 
 .text-container-sports,
 .text-container-hns,
-.text-container-ha{
+.text-container-ha {
     background-color: white;
     padding: 5px 20px 28px 20px;
     border: 3px solid #636363;
 }
 
-.text-container-bns{
+.text-container-bns {
     background-color: white;
     padding: 5px 20px 130px 20px;
     border: 3px solid #636363;
 }
 
 .text-container-swedish,
-.text-container-aroma{
+.text-container-aroma {
     background-color: white;
     padding: 5px 20px 30px 20px;
     border: 3px solid #636363;
@@ -652,7 +656,7 @@ label {
     border: 3px solid #636363;
 }
 
-.treatments{
+.treatments {
     color: #01b79f;
     font-weight: bold;
     font-family: "Bodoni MT", serif;
@@ -678,25 +682,25 @@ label {
     right: 0;
 }
 
-#treatment-heading{
+#treatment-heading {
     text-align: center;
     font-size: xxx-large;
 }
 
-.book-button{
+.book-button {
     justify-content: center;
 }
 
-.btn-lg{
+.btn-lg {
     background-color: #636363;
     color: white;
     margin-top: 20px;
 }
 
-.treatment-content{
-        padding: 10px 20px;
+.treatment-content {
+    padding: 10px 20px;
     margin-bottom: 30px;
-    }
+}
 
 /* LOGIN */
 .centered-form {
@@ -797,7 +801,7 @@ button:hover {
     margin-right: 10px;
 }
 
-.form-group-phone{
+.form-group-phone {
     margin-left: 40px;
     flex: 1;
     margin-right: 10px;
@@ -824,12 +828,6 @@ input[type="text"] {
     margin-bottom: 5px;
     text-align: left;
 }
-
-
-
-
-
-
 
 #user {
     text-align: center;

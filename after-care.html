@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -20,12 +19,12 @@
                     <i class="large bars icon"></i>
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
-                        <div class="ui simple dropdown item">
-                            <a class="item" href="about.html">
+                        <div id="dropdown" class="ui simple dropdown item">
+                            <a class="active item" href="about.html">
                                 <span>About</span></a>
                             <div class="menu">
                                 <a class="item" href="sports-massage.html">Sports Massage</a>
-                                <a class="active item" href="after-care.html">After Care</a>
+                                <a class="item" href="after-care.html">After Care</a>
                                 <a class="item" href="treatments.html">Treatments</a>
                                 <a class="item" href="prices.html">Prices</a>
                             </div>
@@ -34,13 +33,16 @@
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
                         <a href="contact.html">Contact</a>
-                        <a id="top-account-tab" class="item" href="#">Account</a>
                     </div>
                 </a>
             </div>
+
             <div class="two wide column">
-                <i class="large user icon"></i>
+                <a id="top-account-icon" class="item" href="#">
+                    <i class="large user icon"></i>
+                </a>
             </div>
+
             <div class="eight wide column">
                 <a href="index.html">
                     <h3 id="head">Gracie Massage</h3>
@@ -48,7 +50,8 @@
             </div>
             <div class="two wide column">
                 <a class="item">
-                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
+                       rel="noopener noreferrer">
                         <i class="large facebook square icon"></i></a>
                 </a>
             </div>
@@ -73,12 +76,12 @@
 
         <div class="right menu">
             <a href="index.html" class="item">Home</a>
-            <div class="ui simple dropdown item">
+            <div class="ui simple dropdown item" id="dropdown2">
                 <span>About</span>
                 <div class="menu">
-                    <a class="item" href="about.html">About</a>
+                    <a class="active item" href="about.html">About</a>
                     <a class="item" href="sports-massage.html">Sports Massage</a>
-                    <a class="active item" href="after-care.html">After Care</a>
+                    <a class="item" href="after-care.html">After Care</a>
                     <a class="item" href="treatments.html">Treatments</a>
                     <a class="item" href="prices.html">Prices</a>
                 </div>
@@ -88,36 +91,53 @@
                href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                target="_blank" rel="noopener noreferrer">Book Now</a>
             <a href="contact.html" class="item">Contact</a>
-            <a id="bottom-account-tab" class="item" href="#">Account</a>
+
+            <a id="bottom-account-icon" class="item" href="#">
+                <i class="large user icon account"></i>
+            </a>
+
             <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
         </div>
     </div>
-
 </header>
 
 <!-- CONTENT -->
 <div class="content">
+    <!-- Container for image -->
     <div class="image-container">
         <img src="images/selfcare.png" alt="Gracie Massage">
     </div>
+    <!-- Container for aftercare information -->
     <div class="ac-container">
         <div class="ui grid">
             <h1 class="heading">After Care</h1>
-            <p> After receiving bodywork like massage, it's important to be aware of the possibility of experiencing a healing crisis,
-            also known as a Herxheimer reaction. This reaction occurs when the body attempts to eliminate toxins more rapidly than it can
-            dispose of them, often resulting in symptoms such as fatigue, headaches, or emotional upheaval. However, it's crucial to
-            interpret this reaction positively, recognizing it as a sign that the body is actively clearing out impurities and
-            rebalancing itself. Healing encompasses not only physical detoxification but also emotional and spiritual cleansing,
-            as the body has the remarkable ability to store memories and emotions within its tissues. Therefore, the release of these
-            stored emotions during bodywork sessions offers an opportunity for holistic healing. To support the body's healing process,
-            it's advisable to drink plenty of water, engage in gentle movement, prioritize rest and relaxation, consume nourishing foods,
-            practice emotional self-care, and consider scheduling regular follow-up sessions with a qualified practitioner. These steps can
-            optimize the benefits of bodywork, promote overall well-being, and support holistic healing on multiple levels.
+            <p> After receiving bodywork like massage, it's important to be aware of the possibility of experiencing a
+                healing crisis,
+                also known as a Herxheimer reaction. This reaction occurs when the body attempts to eliminate toxins
+                more rapidly than it can
+                dispose of them, often resulting in symptoms such as fatigue, headaches, or emotional upheaval. However,
+                it's crucial to
+                interpret this reaction positively, recognizing it as a sign that the body is actively clearing out
+                impurities and
+                rebalancing itself. Healing encompasses not only physical detoxification but also emotional and
+                spiritual cleansing,
+                as the body has the remarkable ability to store memories and emotions within its tissues. Therefore, the
+                release of these
+                stored emotions during bodywork sessions offers an opportunity for holistic healing. To support the
+                body's healing process,
+                it's advisable to drink plenty of water, engage in gentle movement, prioritize rest and relaxation,
+                consume nourishing foods,
+                practice emotional self-care, and consider scheduling regular follow-up sessions with a qualified
+                practitioner. These steps can
+                optimize the benefits of bodywork, promote overall well-being, and support holistic healing on multiple
+                levels.
             </p>
         </div>
     </div>
 
+    <!-- Grid for displaying symptoms of healing crisis and support for toxin removal -->
     <div class="ui grid">
+        <!-- Column for symptoms of healing crisis -->
         <div class="eight wide column">
             <div class="ac-container1">
                 <h2 class="sm-heading">Symptoms of healing crisis</h2>
@@ -131,37 +151,51 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Column for support for toxin removal -->
         <div class="eight wide column">
             <div class="ac-container2">
                 <h2 class="sm-heading">Toxin Removal Support</h2>
                 <ul class="sm-list">
-                    <li>Hydration: Supports toxin elimination by aiding the body's natural detoxification processes.</li>
-                    <li>Fiber Intake: Supports swift removal of waste by promoting gastrointestinal system function.</li>
-                    <li>Rest: Honoring feelings of tiredness or fatigue allows for essential recovery and rejuvenation.</li>
-                    <li>Exercise: Promotes circulation, which assists in flushing out toxins through sweat and improved lymphatic drainage.</li>
-                    <li>Nutrient-Rich Diet: Supports overall health and detoxification with essential vitamins and minerals.</li>
+                    <li>Hydration: Supports toxin elimination by aiding the body's natural detoxification processes.
+                    </li>
+                    <li>Fiber Intake: Supports swift removal of waste by promoting gastrointestinal system function.
+                    </li>
+                    <li>Rest: Honoring feelings of tiredness or fatigue allows for essential recovery and
+                        rejuvenation.
+                    </li>
+                    <li>Exercise: Promotes circulation, which assists in flushing out toxins through sweat and improved
+                        lymphatic drainage.
+                    </li>
+                    <li>Nutrient-Rich Diet: Supports overall health and detoxification with essential vitamins and
+                        minerals.
+                    </li>
                 </ul>
-            </div>
             </div>
         </div>
     </div>
+</div>
 
 <!-- FOOTER -->
 <footer>
+    <!-- Top footer section with contact information -->
     <div id="topFooter">
         <div class="ui grid">
+            <!-- Column for phone contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="phone square icon custom-icon-color"></i>
                     <a class="footer-text" href="tel:+353892169781">CALL NOW</a>
                 </div>
             </div>
+            <!-- Column for email contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="envelope icon custom-icon-color"></i>
                     <a class="footer-text" href="mailto:graciemassage@gmail.com">E-MAIL</a>
                 </div>
             </div>
+            <!-- Column for booking link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="calendar alternate icon custom-icon-color"></i>
@@ -170,6 +204,7 @@
                        target="_blank" rel="noopener noreferrer">BOOK NOW</a>
                 </div>
             </div>
+            <!-- Column for shopping link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="shopping bag icon custom-icon-color"></i>
@@ -178,16 +213,18 @@
             </div>
         </div>
     </div>
-
+    <!-- Bottom footer section with company information and social media links -->
     <div id="bottomFooter">
         <div class="ui grid">
-            <div class=" footerImage four wide column">
+            <!-- Column for company logo -->
+            <div class="four wide column">
                 <div>
                     <a href="index.html">
                         <img src="images/logos/white_square.png" alt="Gracie Massage">
                     </a>
                 </div>
             </div>
+            <!-- Column for terms and conditions links -->
             <div class="four wide column">
                 <div>
                     <ul class="tcs">
@@ -197,6 +234,7 @@
                     </ul>
                 </div>
             </div>
+            <!-- Column for company address -->
             <div class="four wide column address">
                 <div>
                     <p>Trá Beo,<br>
@@ -205,6 +243,7 @@
                         X91 C6RV</p>
                 </div>
             </div>
+            <!-- Column for social media icons and external links -->
             <div class="four wide column">
                 <div class="item">
                     <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
@@ -213,7 +252,6 @@
                     <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer">
                         <i class="huge instagram icon social-icon"></i></a>
                 </div>
-                <!-- Logo image -->
                 <a href="https://www.trabeo.ie" target="_blank" rel="noopener noreferrer">
                     <img class="trabeo" src="images/logos/trabeo.png" alt="Logo">
                 </a>
@@ -222,8 +260,12 @@
     </div>
 </footer>
 
+<!-- Script links -->
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/firebase/firebase-account.js"></script>
 </body>
 </html>

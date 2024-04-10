@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
+// Firebase configuration object containing credentials
+document.addEventListener("DOMContentLoaded", function () {
     const firebaseConfig = {
         apiKey: "AIzaSyBafFN9TD4y0JnXdOfXEYB7--a4oKL-Jvg",
         authDomain: "gracie-massage.firebaseapp.com",
@@ -9,20 +10,27 @@ document.addEventListener("DOMContentLoaded", function() {
         measurementId: "G-9HGTFB4K0F"
     };
 
+    // Initialize Firebase with the provided configuration
     firebase.initializeApp(firebaseConfig);
 
+    // Get a reference to the Firestore database
     const db = firebase.firestore();
+    // Get references to HTML elements
     const saveButton = document.getElementById('save-btn');
     const nameInput = document.getElementById('name');
     const phoneInput = document.getElementById('phone');
 
-    saveButton.addEventListener('click', function(event) {
+    // Event listener for the click event on the save button
+    saveButton.addEventListener('click', function (event) {
         event.preventDefault();
+
+        // Get name and phone values from input fields and log them
         const name = nameInput.value;
         const phone = phoneInput.value;
         console.log("Name:", name);
         console.log("Phone:", phone);
 
+        // Get the currently authenticated user
         const user = firebase.auth().currentUser;
 
         // Save user details to Firebase database
@@ -30,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function() {
             name: name,
             phone: phone,
             email: user.email
-        }).then(function() {
+        }).then(function () {
             console.log("User details saved successfully");
-        }).catch(function(error) {
+        }).catch(function (error) {
             console.error('Error saving user details:', error);
         });
     });

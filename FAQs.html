@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -21,8 +20,8 @@
                     <i class="large bars icon"></i>
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
-                        <div class="ui simple dropdown item">
-                            <a class="item" href="about.html">
+                        <div id="dropdown" class="ui simple dropdown item">
+                            <a class="active item" href="about.html">
                                 <span>About</span></a>
                             <div class="menu">
                                 <a class="item" href="sports-massage.html">Sports Massage</a>
@@ -35,13 +34,16 @@
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
                         <a href="contact.html">Contact</a>
-                        <a id="top-account-tab" class="item" href="#">Account</a>
                     </div>
                 </a>
             </div>
+
             <div class="two wide column">
-                <i class="large user icon"></i>
+                <a id="top-account-icon" class="item" href="#">
+                    <i class="large user icon"></i>
+                </a>
             </div>
+
             <div class="eight wide column">
                 <a href="index.html">
                     <h3 id="head">Gracie Massage</h3>
@@ -49,7 +51,8 @@
             </div>
             <div class="two wide column">
                 <a class="item">
-                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
+                       rel="noopener noreferrer">
                         <i class="large facebook square icon"></i></a>
                 </a>
             </div>
@@ -74,10 +77,10 @@
 
         <div class="right menu">
             <a href="index.html" class="item">Home</a>
-            <div class="ui simple dropdown item">
+            <div class="ui simple dropdown item" id="dropdown2">
                 <span>About</span>
                 <div class="menu">
-                    <a class="item" href="about.html">About</a>
+                    <a class="active item" href="about.html">About</a>
                     <a class="item" href="sports-massage.html">Sports Massage</a>
                     <a class="item" href="after-care.html">After Care</a>
                     <a class="item" href="treatments.html">Treatments</a>
@@ -89,68 +92,89 @@
                href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                target="_blank" rel="noopener noreferrer">Book Now</a>
             <a href="contact.html" class="item">Contact</a>
-            <a id="bottom-account-tab" class="item" href="#">Account</a>
+
+            <a id="bottom-account-icon" class="item" href="#">
+                <i class="large user icon account"></i>
+            </a>
+
             <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
         </div>
     </div>
-
 </header>
 
 <!-- CONTENT -->
 <div class="content">
     <h1>Frequently Asked Questions</h1>
     <h4>1. What types of massages do you offer?</h4>
-    <p>I offer a variety of massage techniques tailored to meet your needs, including sports massage, swedish, deep tissue,
+    <p>I offer a variety of massage techniques tailored to meet your needs, including sports massage, swedish, deep
+        tissue,
         aromatherapy, and more. Each massage is customised to address your specific concerns and preferences.</p>
     <h4>2. How long is a typical massage session?</h4>
-    <p>Massage sessions typically range from 30 minutes to 90 minutes, allowing you to choose the duration that fits your schedule
+    <p>Massage sessions typically range from 30 minutes to 90 minutes, allowing you to choose the duration that fits
+        your schedule
         and wellness goals.</p>
     <h4>3. Do I need to make an appointment in advance?</h4>
-    <p>Yes, I recommend scheduling your appointment in advance to ensure availability. You can easily book your session online through
+    <p>Yes, I recommend scheduling your appointment in advance to ensure availability. You can easily book your session
+        online through
         the website or by giving us a call.</p>
     <h4>4. What should I expect during my first massage session?</h4>
-    <p>During your initial visit, you'll complete a brief intake form to discuss your health history and any specific areas of concern.
+    <p>During your initial visit, you'll complete a brief intake form to discuss your health history and any specific
+        areas of concern.
         We will then tailor the session to address your needs, ensuring a relaxing and rejuvenating experience.</p>
     <h4> 5. Are you licensed and experienced?</h4>
     <p> Absolutely! I am fully licensed, highly trained with many years of experience in the field.
         I guarantee I have the expertise to provide you with exceptional care and results.</p>
     <h4>6. What should I wear during the massage?</h4>
-    <p>You should undress to your level of comfort. Our therapists are trained to ensure your privacy and will use draping techniques
+    <p>You should undress to your level of comfort. Our therapists are trained to ensure your privacy and will use
+        draping techniques
         to maintain your modesty throughout the session.</p>
     <h4>7. Are your massage oils and products safe for sensitive skin?</h4>
-    <p>Yes, I use Detorra essential oils, these are high-quality massage oils and products that are safe for all skin types,
-        including sensitive skin. If you have any specific allergies or concerns, please let me know, and I can accommodate accordingly.</p>
+    <p>Yes, I use Detorra essential oils, these are high-quality massage oils and products that are safe for all skin
+        types,
+        including sensitive skin. If you have any specific allergies or concerns, please let me know, and I can
+        accommodate accordingly.</p>
     <h4>8. What if I need to cancel or reschedule my appointment?</h4>
     <p>While I understand that emergency, unplanned issues and sickness can come up unexpectedly,
-        please contact Gracie Massage via phone 089 216 9781 or email graciemassage@gmail.com or Instagram @Gracie_Massage AT LEAST
+        please contact Gracie Massage via phone 089 216 9781 or email graciemassage@gmail.com or Instagram
+        @Gracie_Massage AT LEAST
         24 hours prior to your scheduled appointment date and time to avoid cancellation fees*.</p>
-    <p>*Cancellation is required 24 hours prior to appointment; failure to cancel within the required time will result in a fee of 50% of
-        your appointment charge. A No Show is considered failure to cancel or failure to show for a scheduled appointment, the full amount
-        will be required for the fail to cancel or no show appointment. Please give as much notice as possible to allow me the time to fill
-        the appointment, and you will not be charged. This is a small business and my main source of income. Please be respectful of my
+    <p>*Cancellation is required 24 hours prior to appointment; failure to cancel within the required time will result
+        in a fee of 50% of
+        your appointment charge. A No Show is considered failure to cancel or failure to show for a scheduled
+        appointment, the full amount
+        will be required for the fail to cancel or no show appointment. Please give as much notice as possible to allow
+        me the time to fill
+        the appointment, and you will not be charged. This is a small business and my main source of income. Please be
+        respectful of my
         cancellation policy.</p>
     <p class="bold">No Shows and Late Cancellations (24 hours+)</p>
-    <p>Additionally, clients who schedule an appointment and simply DO NOT show up or cancel within the allotted timeframe of 24 hours
-        will be required to pay a non-refundable deposit of half (50%) their scheduled session total in order to reschedule their next
+    <p>Additionally, clients who schedule an appointment and simply DO NOT show up or cancel within the allotted
+        timeframe of 24 hours
+        will be required to pay a non-refundable deposit of half (50%) their scheduled session total in order to
+        reschedule their next
         appointment.</p>
 </div>
 
 <!-- FOOTER -->
 <footer>
+    <!-- Top footer section with contact information -->
     <div id="topFooter">
         <div class="ui grid">
+            <!-- Column for phone contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="phone square icon custom-icon-color"></i>
                     <a class="footer-text" href="tel:+353892169781">CALL NOW</a>
                 </div>
             </div>
+            <!-- Column for email contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="envelope icon custom-icon-color"></i>
                     <a class="footer-text" href="mailto:graciemassage@gmail.com">E-MAIL</a>
                 </div>
             </div>
+            <!-- Column for booking link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="calendar alternate icon custom-icon-color"></i>
@@ -159,6 +183,7 @@
                        target="_blank" rel="noopener noreferrer">BOOK NOW</a>
                 </div>
             </div>
+            <!-- Column for shopping link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="shopping bag icon custom-icon-color"></i>
@@ -167,8 +192,10 @@
             </div>
         </div>
     </div>
+    <!-- Bottom footer section with company information and social media links -->
     <div id="bottomFooter">
         <div class="ui grid">
+            <!-- Column for company logo -->
             <div class="four wide column">
                 <div>
                     <a href="index.html">
@@ -176,15 +203,17 @@
                     </a>
                 </div>
             </div>
+            <!-- Column for terms and conditions links -->
             <div class="four wide column">
                 <div>
                     <ul class="tcs">
                         <li><a href="terms-and-conditions.html">T&C's</a></li>
-                        <li><a class="active item" href="FAQs.html">FAQ's</a></li>
+                        <li><a href="FAQs.html">FAQ's</a></li>
                         <li><a href="privacy-policy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
+            <!-- Column for company address -->
             <div class="four wide column address">
                 <div>
                     <p>Trá Beo,<br>
@@ -193,6 +222,7 @@
                         X91 C6RV</p>
                 </div>
             </div>
+            <!-- Column for social media icons and external links -->
             <div class="four wide column">
                 <div class="item">
                     <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
@@ -201,7 +231,6 @@
                     <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer">
                         <i class="huge instagram icon social-icon"></i></a>
                 </div>
-                <!-- Logo image -->
                 <a href="https://www.trabeo.ie" target="_blank" rel="noopener noreferrer">
                     <img class="trabeo" src="images/logos/trabeo.png" alt="Logo">
                 </a>
@@ -210,9 +239,13 @@
     </div>
 </footer>
 
+<!-- Script links -->
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/firebase/firebase-account.js"></script>
 </body>
 </html>

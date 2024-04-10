@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
@@ -20,8 +19,8 @@
                     <i class="large bars icon"></i>
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
-                        <div class="ui simple dropdown item">
-                            <a class="item" href="about.html">
+                        <div id="dropdown" class="ui simple dropdown item">
+                            <a class="active item" href="about.html">
                                 <span>About</span></a>
                             <div class="menu">
                                 <a class="item" href="sports-massage.html">Sports Massage</a>
@@ -34,13 +33,16 @@
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
                         <a href="contact.html">Contact</a>
-                        <a id="top-account-tab" class="item" href="#">Account</a>
                     </div>
                 </a>
             </div>
+
             <div class="two wide column">
-                <i class="large user icon"></i>
+                <a id="top-account-icon" class="item" href="#">
+                    <i class="large user icon"></i>
+                </a>
             </div>
+
             <div class="eight wide column">
                 <a href="index.html">
                     <h3 id="head">Gracie Massage</h3>
@@ -48,7 +50,8 @@
             </div>
             <div class="two wide column">
                 <a class="item">
-                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
+                       rel="noopener noreferrer">
                         <i class="large facebook square icon"></i></a>
                 </a>
             </div>
@@ -73,10 +76,10 @@
 
         <div class="right menu">
             <a href="index.html" class="item">Home</a>
-            <div class="ui simple dropdown item">
+            <div class="ui simple dropdown item" id="dropdown2">
                 <span>About</span>
                 <div class="menu">
-                    <a class="item" href="about.html">About</a>
+                    <a class="active item" href="about.html">About</a>
                     <a class="item" href="sports-massage.html">Sports Massage</a>
                     <a class="item" href="after-care.html">After Care</a>
                     <a class="item" href="treatments.html">Treatments</a>
@@ -88,46 +91,60 @@
                href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                target="_blank" rel="noopener noreferrer">Book Now</a>
             <a href="contact.html" class="item">Contact</a>
-            <a id="bottom-account-tab" class="item" href="#">Account</a>
+
+            <a id="bottom-account-icon" class="item" href="#">
+                <i class="large user icon account"></i>
+            </a>
+
             <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
         </div>
     </div>
-
 </header>
-
 
 <!-- CONTENT -->
 <div class="content">
     <h1>Privacy Policy</h1>
     <h4>Introduction</h4>
-    <p>At graciemassage.ie, we are committed to protecting the privacy of our visitors. This Privacy Policy outlines how we collect, use,
-        and protect your personal information in accordance with the Irish Data Protection Acts 1988 and 2003 and the EU General Data
+    <p>At graciemassage.ie, we are committed to protecting the privacy of our visitors. This Privacy Policy outlines how
+        we collect, use,
+        and protect your personal information in accordance with the Irish Data Protection Acts 1988 and 2003 and the EU
+        General Data
         Protection Regulation (GDPR).</p>
 
     <h4>Personal Information Collection</h4>
-    <p>We collect personal information such as your name, email address, and other contact details when you contact us through our website.
-        We may also collect information about your computer or mobile device, including your IP address and browser type.</p>
+    <p>We collect personal information such as your name, email address, and other contact details when you contact us
+        through our website.
+        We may also collect information about your computer or mobile device, including your IP address and browser
+        type.</p>
 
     <h4>Use of Personal Information</h4>
-    <p>We use the personal information we collect to communicate with you, provide you with information, and improve our services.
+    <p>We use the personal information we collect to communicate with you, provide you with information, and improve our
+        services.
         We may also use your information for marketing purposes, but only with your explicit consent.</p>
 
     <h4>Disclosure of Personal Information</h4>
-    <p>We do not disclose your personal information to third parties unless required by law or with your explicit consent.
-        However, we may share your information with trusted third-party service providers who assist us in operating our website or
+    <p>We do not disclose your personal information to third parties unless required by law or with your explicit
+        consent.
+        However, we may share your information with trusted third-party service providers who assist us in operating our
+        website or
         conducting business.</p>
 
     <h4>Security of Personal Information</h4>
-    <p>We take appropriate measures to protect your personal information from unauthorized access, disclosure, or alteration.
-        We regularly review our security procedures and update them as necessary to ensure the safety of your information.</p>
+    <p>We take appropriate measures to protect your personal information from unauthorized access, disclosure, or
+        alteration.
+        We regularly review our security procedures and update them as necessary to ensure the safety of your
+        information.</p>
 
     <h4>Your Rights</h4>
-    <p>You have the right to access, modify, or delete your personal information at any time. You also have the right to object to our use
+    <p>You have the right to access, modify, or delete your personal information at any time. You also have the right to
+        object to our use
         of your personal information for marketing purposes.</p>
 
     <h4>Cookies</h4>
-    <p>We use cookies to enhance your experience on our website. Cookies are small files that are stored on your computer or mobile device
-        and allow us to recognize you and personalize your experience. You can disable cookies in your browser settings, but this may affect
+    <p>We use cookies to enhance your experience on our website. Cookies are small files that are stored on your
+        computer or mobile device
+        and allow us to recognize you and personalize your experience. You can disable cookies in your browser settings,
+        but this may affect
         your ability to use certain features of our website.</p>
 
     <h4>Contact Us</h4>
@@ -138,20 +155,24 @@
 
 <!-- FOOTER -->
 <footer>
+    <!-- Top footer section with contact information -->
     <div id="topFooter">
         <div class="ui grid">
+            <!-- Column for phone contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="phone square icon custom-icon-color"></i>
                     <a class="footer-text" href="tel:+353892169781">CALL NOW</a>
                 </div>
             </div>
+            <!-- Column for email contact -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="envelope icon custom-icon-color"></i>
                     <a class="footer-text" href="mailto:graciemassage@gmail.com">E-MAIL</a>
                 </div>
             </div>
+            <!-- Column for booking link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="calendar alternate icon custom-icon-color"></i>
@@ -160,6 +181,7 @@
                        target="_blank" rel="noopener noreferrer">BOOK NOW</a>
                 </div>
             </div>
+            <!-- Column for shopping link -->
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="shopping bag icon custom-icon-color"></i>
@@ -168,8 +190,10 @@
             </div>
         </div>
     </div>
+    <!-- Bottom footer section with company information and social media links -->
     <div id="bottomFooter">
         <div class="ui grid">
+            <!-- Column for company logo -->
             <div class="four wide column">
                 <div>
                     <a href="index.html">
@@ -177,15 +201,17 @@
                     </a>
                 </div>
             </div>
+            <!-- Column for terms and conditions links -->
             <div class="four wide column">
                 <div>
                     <ul class="tcs">
                         <li><a href="terms-and-conditions.html">T&C's</a></li>
                         <li><a href="FAQs.html">FAQ's</a></li>
-                        <li><a class="active item" href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
+            <!-- Column for company address -->
             <div class="four wide column address">
                 <div>
                     <p>Trá Beo,<br>
@@ -194,6 +220,7 @@
                         X91 C6RV</p>
                 </div>
             </div>
+            <!-- Column for social media icons and external links -->
             <div class="four wide column">
                 <div class="item">
                     <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
@@ -202,7 +229,6 @@
                     <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer">
                         <i class="huge instagram icon social-icon"></i></a>
                 </div>
-                <!-- Logo image -->
                 <a href="https://www.trabeo.ie" target="_blank" rel="noopener noreferrer">
                     <img class="trabeo" src="images/logos/trabeo.png" alt="Logo">
                 </a>
@@ -211,8 +237,12 @@
     </div>
 </footer>
 
+<!-- Script links -->
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="js/scripts.js"></script>
+<script src="js/firebase/firebase-account.js"></script>
 </body>
 </html>

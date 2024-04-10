@@ -1,10 +1,11 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
 const nodemailer = require("nodemailer");
-const cors = require("cors")({ origin: true }); // Enable CORS
+const cors = require("cors")({origin: true}); // Enable CORS
 
 admin.initializeApp();
 
+// Create a transporter object for sending emails
 const transporter = nodemailer.createTransport({
     service: "Gmail",
     auth: {
@@ -13,10 +14,12 @@ const transporter = nodemailer.createTransport({
     },
 });
 
+// Cloud Function to handle sending email requests.
 exports.sendEmail = functions.https.onRequest((req, res) => {
     cors(req, res, () => { // Use the CORS middleware
-        const { name, email, message } = req.body;
+        const {name, email, message} = req.body;
 
+        // Construct email options
         const mailOptions = {
             from: "noreply@example.com",
             to: "scnlsrh@gmail.com",
@@ -27,6 +30,7 @@ exports.sendEmail = functions.https.onRequest((req, res) => {
             replyTo: email, // Include the sender's email as the reply-to address
         };
 
+        // Send email using Nodemailer's transporter
         transporter.sendMail(mailOptions, (error, info) => {
             if (error) {
                 console.error("Error sending email:", error);
