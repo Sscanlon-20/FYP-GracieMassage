@@ -105,21 +105,4 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.error(errorCode, errorMessage);
             });
     });
-
-    // Event listener for the "forgot password" link.
-    forgotPasswordLink.addEventListener('click', function (event) {
-        event.preventDefault();
-        const email = document.getElementById('email').value;
-
-        auth.sendPasswordResetEmail(email)
-            .then(function () {
-                // Password reset email sent
-                alert("Password reset email sent. Please check your email inbox.");
-            })
-            .catch(function (error) {
-                // An error occurred
-                console.error("Error sending password reset email:", error);
-                alert("Error sending password reset email. Please try again later.");
-            });
-    });
 });

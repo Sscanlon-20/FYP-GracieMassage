@@ -1,6 +1,6 @@
 //HEADER//
 window.onscroll = function () {
-    myFunction();
+    stickyScroll();
 };
 
 const header = document.getElementById("topHeader");
@@ -17,7 +17,7 @@ function toggleMenu() {
 }
 
 // function to keep top menu on screen when scrolling
-function myFunction() {
+function stickyScroll() {
     if (window.scrollY > sticky) {
         header.classList.add("sticky");
     } else {
@@ -79,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Displaying user details on page load
     displayUserDetails();
 });
-
 
 
 

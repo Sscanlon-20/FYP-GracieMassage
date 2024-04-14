@@ -40,6 +40,7 @@ h1 {
 
 p {
     line-height: 2.5em;
+    font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .text {
@@ -61,12 +62,16 @@ p {
     text-decoration: underline;
 }
 
+.information{
+    font-weight: bolder;
+    font-size: medium;
+}
 /*HEADERS*/
 .icon {
     color: #01b79f;
 }
 
-#basket {
+#basketIcon {
     color: #333333
 }
 
@@ -148,18 +153,13 @@ p {
     margin-left: 5px;
 }
 
-#topFooter {
-    background-color: #01b79f;
-    padding: 10px;
-}
-
 .custom-icon-color {
     color: white;
 }
 
-.footer-text {
-    color: white;
-    font-size: large;
+#topFooter {
+    background-color: #01b79f;
+    padding: 10px;
 }
 
 #bottomFooter {
@@ -169,9 +169,16 @@ p {
     text-align: center;
 }
 
+.footer-text {
+    color: white;
+    font-size: large;
+}
+
 ul.tcs {
     list-style-type: none;
     line-height: 2.5em;
+    margin: 0;
+    padding: 0;
 }
 
 ul.tcs li {
@@ -187,21 +194,6 @@ ul.tcs li a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-ul.tcs {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-ul.tcs li {
-    margin-bottom: 10px;
-}
-
-ul.tcs li a {
-    color: white;
-    text-decoration: underline;
 }
 
 .address p {
@@ -227,8 +219,8 @@ form {
     padding-right: 20px;
 }
 
-.social-icon {
-    margin: 0 40px;
+iframe {
+    border-radius: 5px;
 }
 
 .social-icons {
@@ -293,13 +285,11 @@ label {
     overflow: hidden;
 }
 
-
 .hero-image {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-
 
 .text-overlay {
     position: absolute;
@@ -385,7 +375,6 @@ label {
     color: white;
     padding: 15px;
     width: fit-content;
-    margin-bottom: 20px;
 }
 
 #review-boxes {
@@ -442,31 +431,24 @@ label {
     color: white;
     padding: 15px;
     width: fit-content;
-    margin: 50px 50px 20px auto;
+    margin: 50px 100px 30px auto;
     display: block;
 }
 
 .rating-heading {
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
     font-family: "Bodoni MT", serif;
+    font-size: 50px !important;
     text-align: left;
-    padding-top: 20px;
-    font-size: xxx-large;
-    margin: 20px auto 30px 50px;
+    padding-top: 40px;
+    margin: 0 auto 30px 100px;
 }
 
 #read-more-button:hover,
 #write-review-button:hover {
     background-color: white;
     color: #333333;
-}
-
-.reviews-header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 /*ABOUT*/
@@ -504,6 +486,15 @@ label {
     margin-bottom: 5px;
 }
 
+.sm-heading2 {
+    color: #01b79f;
+    font-weight: bold;
+    font-family: "Bodoni MT", serif;
+    text-align: left;
+    margin-bottom: 5px;
+    padding-left: 110px;
+}
+
 .ui.grid {
     display: flex;
     flex-wrap: wrap;
@@ -512,7 +503,7 @@ label {
 
 .sm-list {
     list-style-type: none;
-    padding-left: 10px;
+    padding-left: 110px;
     margin-top: 5px;
     line-height: 2.3em;
 }
@@ -545,6 +536,50 @@ label {
     padding: 10px;
 }
 
+.ac-list {
+    list-style-type: none;
+    padding-left: 10px;
+    margin-top: 5px;
+    line-height: 2.3em;
+}
+
+.ac-list li:before {
+    content: "•";
+    color: #01b79f;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.ac-heading {
+    color: #01b79f;
+    font-weight: bold;
+    font-family: "Bodoni MT", serif;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.ui.grid.sports-massage {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-and-image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.massage-image {
+    max-width: 800px;
+    padding-right: 110px;
+    margin-top: 20px;
+}
+
 .highlight {
     font-weight: bold;
     color: #01b79f;
@@ -553,8 +588,8 @@ label {
 .ac-container {
     border: 3px solid #636363;
     box-shadow: 0 0 20px 0 #01b79f;
-    padding: 20px 20px 30px 20px;
-    margin: 10px 50px 20px 50px;
+    padding: 0 20px 30px 20px;
+    margin: 0 50px 20px 50px;
     background-color: white;
 }
 
@@ -576,7 +611,7 @@ label {
 
 .image-container {
     text-align: center;
-    margin: 0 50px 15px 50px;
+    margin: 0 50px 20px 50px;
 }
 
 .image-container img {
@@ -586,7 +621,7 @@ label {
 /*PRICES*/
 .lists-container {
     display: flex;
-    max-width: 800px;
+    max-width: 900px;
     justify-content: center;
     border: 3px solid #636363;
     box-shadow: 0 0 20px 0 #01b79f;
@@ -601,13 +636,15 @@ label {
 .list1 li, .list2 li {
     padding: 5px;
     background-color: transparent;
-    width: 250px;
+    width: 300px;
     text-align: center;
 }
 
 .list1 li h4,
 .list2 li h4 {
     margin-bottom: 5px;
+    font-weight: bold;
+    font-size: large;
 }
 
 .list1 li p,
@@ -786,7 +823,7 @@ button:hover {
 #save-btn, #logout-btn {
     width: 200px;
     height: 40px;
-
+    cursor: pointer;
 }
 
 .form-container {
@@ -833,10 +870,123 @@ input[type="text"] {
     text-align: center;
     color: #01b79f;
     font-weight: bold;
-    font-family: "Helvetica", serif;
+    font-family: "Helvetica", "Arial", sans-serif;
 }
 
+.login1 {
+    color: #333333;
+    font-family: "Helvetica", "Arial", sans-serif;
+}
 
+.login2 {
+    color: #01b79f;
+    font-family: "Helvetica", "Arial", sans-serif;
+    text-decoration: underline;
+}
+
+.login2:hover {
+    color: #333333;
+    font-family: "Helvetica", "Arial", sans-serif;
+    text-decoration: underline;
+}
+
+/*SHOP*/
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 60px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.product-card {
+    border: 3px solid #636363;
+    box-shadow: 0 0 10px 0 #01b79f;
+    padding: 20px;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h2 {
+    font-family: "Bodoni MT", Arial, sans-serif;
+    font-size: 22px;
+    margin-top: 10px;
+    color: #01b79f;
+    font-weight: bolder;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #333333;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.product-card p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.product-card .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.product-card .add-to-cart-btn {
+    background-color: #01b79f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.product-card .add-to-cart-btn:hover {
+    background-color: #636363;
+    color: white;
+}
+
+/*BASKET*/
+.content-basket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.basket-container {
+    width: 300px;
+    padding: 20px;
+    border: 3px solid #636363;
+    box-shadow: 0 0 10px 0 #01b79f;
+    background-color: #fff;
+    text-align: center;
+}
+
+#basket-items {
+    list-style-type: none;
+    padding: 0;
+}
+
+#basket-items li {
+    margin-bottom: 10px;
+}
+
+#total {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.add2basket-button {
+    margin: 5px;
+}
 
 
 

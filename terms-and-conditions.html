@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Terms & Conditions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/logos/Green32.png">
@@ -14,13 +14,17 @@
 <header>
     <div id="topHeader">
         <div class="ui grid">
+
+            <!-- Toggle menu -->
             <div id="menuIcon" class="two wide column">
                 <a class="item" onclick="toggleMenu()">
                     <i class="large bars icon"></i>
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
+
+                        <!-- Dropdown menu on top header -->
                         <div id="dropdown" class="ui simple dropdown item">
-                            <a class="active item" href="about.html">
+                            <a class="item" href="about.html">
                                 <span>About</span></a>
                             <div class="menu">
                                 <a class="item" href="sports-massage.html">Sports Massage</a>
@@ -29,7 +33,8 @@
                                 <a class="item" href="prices.html">Prices</a>
                             </div>
                         </div>
-                        <a href="#">Shop</a>
+
+                        <a href="shop.html" class="item">Shop</a>
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
                         <a href="contact.html">Contact</a>
@@ -38,7 +43,7 @@
             </div>
 
             <div class="two wide column">
-                <a id="top-account-icon" class="item" href="#">
+                <a class="item" href="account.html">
                     <i class="large user icon"></i>
                 </a>
             </div>
@@ -51,14 +56,13 @@
             <div class="two wide column">
                 <a class="item">
                     <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
-                       rel="noopener noreferrer">
-                        <i class="large facebook square icon"></i></a>
+                       rel="noopener noreferrer"><i class="large facebook square icon"></i></a>
                 </a>
             </div>
             <div class="two wide column">
                 <a class="item">
-                    <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer">
-                        <i class="large instagram icon"></i></a>
+                    <a href="https://www.instagram.com/gracie_massage/" target="_blank"
+                       rel="noopener noreferrer"><i class="large instagram icon"></i></a>
                 </a>
             </div>
         </div>
@@ -76,27 +80,33 @@
 
         <div class="right menu">
             <a href="index.html" class="item">Home</a>
+
+            <!-- Toggle menu bottom header -->
             <div class="ui simple dropdown item" id="dropdown2">
                 <span>About</span>
+                <!-- Dropdown menu bottom header-->
                 <div class="menu">
-                    <a class="active item" href="about.html">About</a>
+                    <a class="item" href="about.html">About</a>
                     <a class="item" href="sports-massage.html">Sports Massage</a>
                     <a class="item" href="after-care.html">After Care</a>
                     <a class="item" href="treatments.html">Treatments</a>
                     <a class="item" href="prices.html">Prices</a>
                 </div>
             </div>
-            <a class="item">Shop</a>
+
+            <a class="item" href="shop.html">Shop</a>
             <a class="item"
                href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                target="_blank" rel="noopener noreferrer">Book Now</a>
             <a href="contact.html" class="item">Contact</a>
 
-            <a id="bottom-account-icon" class="item" href="#">
+            <a class="item" href="account.html">
                 <i class="large user icon account"></i>
             </a>
 
-            <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
+            <a class="ui item" href="basket.html">
+                <i id="basketIcon" class="large shopping basket icon"></i>
+            </a>
         </div>
     </div>
 </header>
@@ -104,13 +114,13 @@
 <!-- CONTENT -->
 <div class="content">
     <h1>Terms and Conditions</h1>
-    <h4>1. Making An Appointment</h4>
+    <h4 class="information">1. Making An Appointment</h4>
     <p>To use the services at Gracie Massage, you must be over 18 years of age. Pregnant women can be massaged from the
         13th week.
         <br>You can book an appointment by contacting me at graciemassage@gmail.com or 089 216 9781.</p>
-    <h4>2. Payments</h4>
+    <h4 class="information">2. Payments</h4>
     <p>I accept payments through Revolut, card or cash on the day.</p>
-    <h4>3. Cancellations</h4>
+    <h4 class="information">3. Cancellations</h4>
     <p>While I understand that emergency, unplanned issues and sickness can come up unexpectedly,
         please contact Gracie Massage via phone 089 216 9781 or email graciemassage@gmail.com or Instagram
         @Gracie_Massage AT LEAST
@@ -130,13 +140,13 @@
         will be required to pay a non-refundable deposit of half (50%) their scheduled session total in order to
         reschedule their next
         appointment.</p>
-    <h4>4. Inappropriate Behaviour</h4>
+    <h4 class="information">4. Inappropriate Behaviour</h4>
     <p>Gracie Massage has a zero-tolerance policy regarding inappropriate behaviour, sexual harassment, or violence
         against their
         massage therapist. Any inappropriate behaviour against your therapist will be reported to the local authorities
         with a filing of
         complaints.</p>
-    <h4> 5. Storage of Personal Data</h4>
+    <h4 class="information"> 5. Storage of Personal Data</h4>
     <p> During a consultation Gracie Massage will need to gather some personal information including some medical
         information.
         Only the information that it is necessary for the proper assessment and treatment of the client will be
@@ -144,21 +154,21 @@
         These files will be stored securely and will never be viewed by anyone else without the client’s permission.
         You have a right to request all you stored information at any time.</p>
     <h1>Website Terms and Conditions</h1>
-    <h4>1. Terms</h4>
+    <h4 class="information">1. Terms</h4>
     <p>By accessing this Website, accessible from https://www.graciemassage.ie you are agreeing to be bound by these
         Website
         Terms and Conditions of Use and agree that you are responsible for the agreement with any applicable local laws.
         If you disagree with any of these terms, you are prohibited from accessing this site. The materials contained in
         this
         Website are protected by copyright and trademark law.</p>
-    <h4>2. Disclaimer</h4>
+    <h4 class="information">2. Disclaimer</h4>
     <p>All the materials on Gracie Massage's website are provided “as is”. Gracie Massage makes no warranties,
         may it be expressed or implied, therefore negates all other warranties. Furthermore, Gracie Massage does not
         make any
         representations concerning the accuracy or reliability of the use of the materials on its website or otherwise
         relating to
         such materials or any sites linked to this website.</p>
-    <h4>3. Limitations</h4>
+    <h4 class="information">3. Limitations</h4>
     <p>Gracie Massage or its suppliers will not be held accountable for any damages that will arise with the use or
         inability to use the
         materials on Gracie Massage's website , even if Gracie Massage or an authorize representative of this website
@@ -166,23 +176,23 @@
         orally or written, of the possibility of such damage. Some jurisdiction does not allow limitations on implied
         warranties or
         limitations of liability for incidental damages, these limitations may not apply to you.</p>
-    <h4>4. Revisions And Errata</h4>
+    <h4 class="information">4. Revisions And Errata</h4>
     <p>The materials appearing on Gracie Massage's website may include technical, typographical, or photographic errors.
         Gracie Massage will not promise that any of the materials in this website are accurate, complete, or current.
         Gracie Massage may change the materials contained on its website at any time without notice. Gracie Massage's
         website does not make
         any commitment to update the materials.</p>
-    <h4>5. Links</h4>
+    <h4 class="information">5. Links</h4>
     <p>Gracie Massage has not reviewed all the sites linked to its website and is not responsible for the contents of
         any such
         linked site. The presence of any link does not imply endorsement by Gracie Massage of the site. The use of any
         linked website is at
         the user’s own risk.</p>
-    <h4>6. Site Terms Of Use Modifications</h4>
+    <h4 class="information">6. Site Terms Of Use Modifications</h4>
     <p>Gracie Massage may revise these Terms of Use for its Website at any time without prior notice. By using this
         Website, you are
         agreeing to be bound by the current version of these Terms and Conditions of Use.</p>
-    <h4>7. Governing Law</h4>
+    <h4 class="information">7. Governing Law</h4>
     <p>Any claim related to Gracie Massage's website shall be governed by the laws of .ie without regards to its
         conflict of law provisions.</p>
 </div>
@@ -219,7 +229,7 @@
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="shopping bag icon custom-icon-color"></i>
-                    <a class="footer-text" href="#">SHOP</a>
+                    <a class="footer-text" href="shop.html">SHOP</a>
                 </div>
             </div>
         </div>

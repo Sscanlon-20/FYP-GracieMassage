@@ -14,22 +14,27 @@
 <header>
     <div id="topHeader">
         <div class="ui grid">
+
+            <!-- Toggle menu -->
             <div id="menuIcon" class="two wide column">
                 <a class="item" onclick="toggleMenu()">
                     <i class="large bars icon"></i>
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
+
+                        <!-- Dropdown menu on top header -->
                         <div id="dropdown" class="ui simple dropdown item">
-                            <a class="active item" href="about.html">
+                            <a class="item" href="about.html">
                                 <span>About</span></a>
                             <div class="menu">
-                                <a class="item" href="sports-massage.html">Sports Massage</a>
+                                <a class="active item" href="sports-massage.html">Sports Massage</a>
                                 <a class="item" href="after-care.html">After Care</a>
                                 <a class="item" href="treatments.html">Treatments</a>
                                 <a class="item" href="prices.html">Prices</a>
                             </div>
                         </div>
-                        <a href="#">Shop</a>
+
+                        <a href="shop.html" class="item">Shop</a>
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
                         <a href="contact.html">Contact</a>
@@ -38,7 +43,7 @@
             </div>
 
             <div class="two wide column">
-                <a id="top-account-icon" class="item" href="#">
+                <a class="item" href="account.html">
                     <i class="large user icon"></i>
                 </a>
             </div>
@@ -51,14 +56,13 @@
             <div class="two wide column">
                 <a class="item">
                     <a href="https://www.facebook.com/graciesportsmassageandoils/" target="_blank"
-                       rel="noopener noreferrer">
-                        <i class="large facebook square icon"></i></a>
+                       rel="noopener noreferrer"><i class="large facebook square icon"></i></a>
                 </a>
             </div>
             <div class="two wide column">
                 <a class="item">
-                    <a href="https://www.instagram.com/gracie_massage/" target="_blank" rel="noopener noreferrer">
-                        <i class="large instagram icon"></i></a>
+                    <a href="https://www.instagram.com/gracie_massage/" target="_blank"
+                       rel="noopener noreferrer"><i class="large instagram icon"></i></a>
                 </a>
             </div>
         </div>
@@ -76,27 +80,33 @@
 
         <div class="right menu">
             <a href="index.html" class="item">Home</a>
+
+            <!-- Toggle menu bottom header -->
             <div class="ui simple dropdown item" id="dropdown2">
                 <span>About</span>
+                <!-- Dropdown menu bottom header-->
                 <div class="menu">
-                    <a class="active item" href="about.html">About</a>
-                    <a class="item" href="sports-massage.html">Sports Massage</a>
+                    <a class="item" href="about.html">About</a>
+                    <a class="active item" href="sports-massage.html">Sports Massage</a>
                     <a class="item" href="after-care.html">After Care</a>
                     <a class="item" href="treatments.html">Treatments</a>
                     <a class="item" href="prices.html">Prices</a>
                 </div>
             </div>
-            <a class="item">Shop</a>
+
+            <a class="item" href="shop.html">Shop</a>
             <a class="item"
                href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                target="_blank" rel="noopener noreferrer">Book Now</a>
             <a href="contact.html" class="item">Contact</a>
 
-            <a id="bottom-account-icon" class="item" href="#">
+            <a class="item" href="account.html">
                 <i class="large user icon account"></i>
             </a>
 
-            <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
+            <a class="ui item" href="basket.html">
+                <i id="basketIcon" class="large shopping basket icon"></i>
+            </a>
         </div>
     </div>
 </header>
@@ -106,7 +116,7 @@
     <!-- Container for images related to sports massage -->
     <div id="sm-images" class="ui grid">
         <div class="four wide column">
-            <img src="images/back.png" alt="Gracie_massage">
+            <img src="images/back1.png" alt="Gracie_massage">
         </div>
         <div class="four wide column">
             <img src="images/arm.png" alt="Gracie_massage">
@@ -124,42 +134,40 @@
         <!-- Grid for the content related to sports massage -->
         <div class="ui grid sports-massage">
             <h1 class="heading">What is Sports Massage?</h1>
-            <p class="text">
-                Sports Massage is a specialised therapeutic approach geared towards injury prevention and treatment,
-                offering personalized care tailored to individual needs, whether for athletes or active individuals. It
-                encompasses
-                various techniques such as deep tissue massage, Swedish massage, stretching, and trigger point therapy
-                to alleviate muscle
-                tension, enhance relaxation, and improve flexibility. This form of massage not only helps prevent
-                injuries by addressing
-                areas of tension and promoting optimal muscle function but also contributes to overall physical health
-                and well-being.
-                Regular sessions can lead to improved athletic performance, quicker recovery from workouts, reduced
-                stress levels, and
-                better posture. Whether you're a professional athlete striving for peak performance or someone who
-                enjoys regular physical
-                activity, incorporating sports massage into your wellness routine can be highly beneficial. It serves as
-                a proactive measure
-                to maintain optimal physical health and minimize the risk of injuries, ensuring you can continue to
-                pursue your fitness
-                goals with confidence.
-            </p>
-            <!-- Subsection describing the purposes of sports massage -->
-            <div>
-                <h2 class="sm-heading">What is it used for?</h2>
-                <ul class="sm-list">
-                    <li>Breaks down scar tissue</li>
-                    <li>Realigns adhesions</li>
-                    <li>Lengthens or shortens tissues</li>
-                    <li>Improves circulation</li>
-                    <li>Reduces muscle soreness and tension</li>
-                    <li>Enhances athletic performance</li>
-                    <li>Facilitates muscle recovery</li>
-                    <li>Promotes relaxation and reduces stress levels</li>
-                </ul>
+            <div class="content-container">
+                <p class="text">
+                    Sports Massage is a specialised therapeutic approach geared towards injury prevention and treatment,
+                    offering personalized care tailored to individual needs, whether for athletes or active individuals. It
+                    encompasses various techniques such as deep tissue massage, Swedish massage, stretching, and trigger point therapy
+                    to alleviate muscle tension, enhance relaxation, and improve flexibility. This form of massage not only helps prevent
+                    injuries by addressing areas of tension and promoting optimal muscle function but also contributes to overall physical health
+                    and well-being. Regular sessions can lead to improved athletic performance, quicker recovery from workouts, reduced
+                    stress levels, and better posture. Whether you're a professional athlete striving for peak performance or someone who
+                    enjoys regular physical activity, incorporating sports massage into your wellness routine can be highly beneficial. It serves as
+                    a proactive measure to maintain optimal physical health and minimize the risk of injuries, ensuring you can continue to
+                    pursue your fitness goals with confidence.
+                </p>
+                <!-- Subsection describing the purposes of sports massage -->
+                <div class="list-and-image-container">
+                    <div class="list-container">
+                        <h2 class="sm-heading2">What is it used for?</h2>
+                        <ul class="sm-list">
+                            <li>Breaks down scar tissue</li>
+                            <li>Realigns adhesions</li>
+                            <li>Lengthens or shortens tissues</li>
+                            <li>Improves circulation</li>
+                            <li>Reduces muscle soreness and tension</li>
+                            <li>Enhances athletic performance</li>
+                            <li>Facilitates muscle recovery</li>
+                            <li>Promotes relaxation and reduces stress levels</li>
+                        </ul>
+                    </div>
+                    <img class="massage-image" src="images/back.png" alt="Sports Massage Image">
+                </div>
             </div>
         </div>
     </div>
+
 
     <!-- Container for techniques used in sports massage -->
     <div class="sm-container">
@@ -244,7 +252,7 @@
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="shopping bag icon custom-icon-color"></i>
-                    <a class="footer-text" href="#">SHOP</a>
+                    <a class="footer-text" href="shop.html">SHOP</a>
                 </div>
             </div>
         </div>

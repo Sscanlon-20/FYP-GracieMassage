@@ -15,11 +15,15 @@
 <header>
     <div id="topHeader">
         <div class="ui grid">
+
+            <!-- Toggle menu -->
             <div id="menuIcon" class="two wide column">
                 <a class="item" onclick="toggleMenu()">
                     <i class="large bars icon"></i>
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
+
+                        <!-- Dropdown menu on top header -->
                         <div id="dropdown" class="ui simple dropdown item">
                             <a class="active item" href="about.html">
                                 <span>About</span></a>
@@ -30,7 +34,8 @@
                                 <a class="item" href="prices.html">Prices</a>
                             </div>
                         </div>
-                        <a href="#">Shop</a>
+
+                        <a class="item" href="shop.html">Shop</a>
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
                         <a href="contact.html">Contact</a>
@@ -38,8 +43,9 @@
                 </a>
             </div>
 
+            <!-- user icon top-->
             <div class="two wide column">
-                <a id="top-account-icon" class="item" href="#">
+                <a class="item" href="account.html">
                     <i class="large user icon"></i>
                 </a>
             </div>
@@ -77,8 +83,11 @@
 
         <div class="right menu">
             <a href="index.html" class="item">Home</a>
+
+            <!-- Toggle menu bottom header -->
             <div class="ui simple dropdown item" id="dropdown2">
                 <span>About</span>
+                <!-- Dropdown menu bottom header-->
                 <div class="menu">
                     <a class="active item" href="about.html">About</a>
                     <a class="item" href="sports-massage.html">Sports Massage</a>
@@ -87,17 +96,21 @@
                     <a class="item" href="prices.html">Prices</a>
                 </div>
             </div>
-            <a class="item">Shop</a>
+
+            <a class="item" href="shop.html">Shop</a>
             <a class="item"
                href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                target="_blank" rel="noopener noreferrer">Book Now</a>
             <a href="contact.html" class="item">Contact</a>
 
-            <a id="bottom-account-icon" class="item" href="#">
+            <!-- user icon bottom-->
+            <a class="item" href="account.html">
                 <i class="large user icon account"></i>
             </a>
 
-            <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
+            <a class="ui item" href="basket.html">
+                <i id="basketIcon" class="large shopping basket icon"></i>
+            </a>
         </div>
     </div>
 </header>
@@ -180,6 +193,20 @@
     </div>
 
     <hr class="divider">
+
+    <div class= "ui grid stackable container">
+        <div id="gallery">
+            <a href="images/sportsMassage1.png" data-title="Sports Massage Certificate" data-lightbox="Gracie Massage">
+                <img src="images/small/sportsMassage2.png" width="220" height="250" alt="Cert 1"></a>
+            <a href="images/aromatouch1.png" data-title="Aromatouch Massage Certificate" data-lightbox="Gracie Massage">
+                <img src="images/small/aromatouch2.png" width="220" height="250" alt="Cert 2"></a>
+            <a href="images/imta.png" data-title="Cert 4" data-lightbox="Gracie Massage">
+                <img src="images/small/imta.png" width="220" height="250" alt="Cert 3"></a>
+            <a href="images/detorra.png" data-title="Cert 3" data-lightbox="Gracie Massage">
+                <img src="images/small/detorra.png" width="220" height="250" alt="Cert 4"></a>
+
+        </div>
+    </div>
 </div>
 
 <!-- FOOTER -->
@@ -214,7 +241,7 @@
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="shopping bag icon custom-icon-color"></i>
-                    <a class="footer-text" href="#">SHOP</a>
+                    <a class="footer-text" href="shop.html">SHOP</a>
                 </div>
             </div>
         </div>
@@ -268,12 +295,12 @@
 
 <!-- Script links -->
 <script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore-compat.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="js/lightbox.min.js"></script>
 <script src="js/scripts.js"></script>
-<script src="js/firebase/firebase-account.js"></script>
+
 </body>
 </html>
 

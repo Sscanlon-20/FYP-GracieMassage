@@ -14,13 +14,17 @@
 <header>
     <div id="topHeader">
         <div class="ui grid">
+
+            <!-- Toggle menu -->
             <div id="menuIcon" class="two wide column">
                 <a class="item" onclick="toggleMenu()">
                     <i class="large bars icon"></i>
                     <div id="menu1">
                         <a class="item" href="index.html">Home</a>
+
+                        <!-- Dropdown menu on top header -->
                         <div id="dropdown" class="ui simple dropdown item">
-                            <a class="active item" href="about.html">
+                            <a class="item" href="about.html">
                                 <span>About</span></a>
                             <div class="menu">
                                 <a class="item" href="sports-massage.html">Sports Massage</a>
@@ -29,16 +33,18 @@
                                 <a class="item" href="prices.html">Prices</a>
                             </div>
                         </div>
-                        <a href="#">Shop</a>
+
+                        <a href="shop.html">Shop</a>
                         <a href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                            target="_blank" rel="noopener noreferrer">Book Now</a>
-                        <a href="contact.html">Contact</a>
+                        <a class="active item" href="contact.html">Contact</a>
                     </div>
                 </a>
             </div>
 
+            <!-- user icon top-->
             <div class="two wide column">
-                <a id="top-account-icon" class="item" href="#">
+                <a class="item" href="account.html">
                     <i class="large user icon"></i>
                 </a>
             </div>
@@ -76,27 +82,34 @@
 
         <div class="right menu">
             <a href="index.html" class="item">Home</a>
+
+            <!-- Toggle menu bottom header -->
             <div class="ui simple dropdown item" id="dropdown2">
                 <span>About</span>
+                <!-- Dropdown menu bottom header-->
                 <div class="menu">
-                    <a class="active item" href="about.html">About</a>
+                    <a class="item" href="about.html">About</a>
                     <a class="item" href="sports-massage.html">Sports Massage</a>
                     <a class="item" href="after-care.html">After Care</a>
                     <a class="item" href="treatments.html">Treatments</a>
                     <a class="item" href="prices.html">Prices</a>
                 </div>
             </div>
-            <a class="item">Shop</a>
+
+            <a class="item" href="shop.html">Shop</a>
             <a class="item"
                href="https://www.fresha.com/book-now/boho-studio-ioe3hw6j/all-offer?id=1097742&pId=1040893"
                target="_blank" rel="noopener noreferrer">Book Now</a>
-            <a href="contact.html" class="item">Contact</a>
+            <a href="contact.html" class="active item">Contact</a>
 
-            <a id="bottom-account-icon" class="item" href="#">
+            <!-- user icon bottom-->
+            <a class="item" href="account.html">
                 <i class="large user icon account"></i>
             </a>
 
-            <a class="ui item"><i id="basket" class="large shopping basket icon"></i></a>
+            <a class="ui item" href="basket.html">
+                <i id="basketIcon" class="large shopping basket icon"></i>
+            </a>
         </div>
     </div>
 </header>
@@ -160,9 +173,9 @@
         </div>
         <div class="four wide column">
             <h3 class="contact">Address</h3>
-            <p>Trá Beo,
+            <p>Trá Beo,<br>
                 7B Riverstown Business Park,
-                Tramore,Co. Waterford
+                Tramore,<br>Co. Waterford<br>
                 X91 C6RV</p>
         </div>
     </div>
@@ -200,7 +213,7 @@
             <div class="four wide column">
                 <div class="contact-icon">
                     <i class="shopping bag icon custom-icon-color"></i>
-                    <a class="footer-text" href="#">SHOP</a>
+                    <a class="footer-text" href="shop.html">SHOP</a>
                 </div>
             </div>
         </div>
