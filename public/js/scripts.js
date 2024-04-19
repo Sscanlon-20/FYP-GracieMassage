@@ -6,7 +6,7 @@ window.onscroll = function () {
 const header = document.getElementById("topHeader");
 const sticky = header.offsetTop;
 
-// toggling the about tab in the navigation menus
+// toggling the about tab in the navigation menu in top header
 function toggleMenu() {
     const menu = document.getElementById("menu1");
     if (menu.style.display === "block") {
