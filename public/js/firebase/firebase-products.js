@@ -60,24 +60,6 @@ function createProductCards(products) {
     });
 }
 
-// Add event listener to the product grid container
-const productGrid = document.querySelector('.product-grid');
-productGrid.addEventListener('click', function(event) {
-    if (event.target && event.target.classList.contains('add-to-cart-btn')) {
-        // Find the parent product card element
-        const productCard = event.target.closest('.product-card');
-        // Extract product data from the product card
-        const product = {
-            id: productCard.dataset.productId,
-            title: productCard.querySelector('.title').textContent,
-            price: productCard.querySelector('.price').textContent
-        };
-        // Add the product to the cart
-        addToCart(product);
-    }
-});
-
-
 // Fetch product data from Firestore and populate product cards
 fetchProductData()
     .then(products => {

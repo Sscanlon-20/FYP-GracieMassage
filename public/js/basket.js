@@ -13,11 +13,11 @@ function addToCart(product) {
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
     // Check if the product already exists in the cart
-    const existingItem = cartItems.find(item => item.id === product.id);
+    const existingItemIndex = cartItems.findIndex(item => item.id === product.id);
 
-    if (existingItem) {
+    if (existingItemIndex !== -1) {
         // If the product already exists, update its quantity
-        existingItem.quantity++;
+        cartItems[existingItemIndex].quantity++;
     } else {
         // If the product doesn't exist, add it to the cart
         product.quantity = 1;
@@ -87,5 +87,4 @@ function displayCartItems() {
 
 // Call the function when the basket page loads
 window.addEventListener('load', displayCartItems);
-
 
