@@ -17,7 +17,7 @@ body {
     font-weight: bold;
     font-family: "Bodoni MT", serif;
     text-align: center;
-    padding-top: 20px;
+    padding-top: .15em;
     font-size: xxx-large;
 }
 
@@ -894,7 +894,9 @@ input[type="text"] {
 
 .product-card img {
     max-width: 100%;
-    height: auto;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
 }
 
 .product-card h2 {
@@ -949,7 +951,7 @@ input[type="text"] {
 }
 
 .basket-container {
-    width: 300px;
+    width: 600px;
     padding: 20px;
     border: 3px solid #636363;
     box-shadow: 0 0 10px 0 #01b79f;
@@ -971,11 +973,13 @@ input[type="text"] {
     margin-top: 10px;
 }
 
-.add2basket-button {
+.basket-button {
     margin: 5px;
 }
 
-
+.trash{
+    margin-left: 20px;
+}
 
 
 
