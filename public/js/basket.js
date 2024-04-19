@@ -1,18 +1,23 @@
+/**
+ * Redirects the user to the shop page.
+ */
 function redirectToShop() {
     window.location.href = "shop.html";
 }
 
-// Function to handle adding a product to the cart
-// Function to handle adding a product to the cart
+/**
+ * Handles adding a product to the cart.
+ * @param {Object} product - The product object to add to the cart.
+ */
 function addToCart(product) {
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
     // Check if the product already exists in the cart
-    const existingItem = cartItems.find(item => item.id === product.id);
+    const existingItemIndex = cartItems.findIndex(item => item.id === product.id);
 
-    if (existingItem) {
+    if (existingItemIndex !== -1) {
         // If the product already exists, update its quantity
-        existingItem.quantity++;
+        cartItems[existingItemIndex].quantity++;
     } else {
         // If the product doesn't exist, add it to the cart
         product.quantity = 1;
@@ -37,7 +42,9 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// Function to retrieve and display cart items
+/**
+ * Retrieves and displays cart items.
+ */
 function displayCartItems() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const basketList = document.getElementById('basket-items');

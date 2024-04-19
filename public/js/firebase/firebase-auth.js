@@ -1,5 +1,12 @@
-// Firebase configuration object containing credentials
+/**
+ * Firebase configuration object containing credentials.
+ * Initializes Firebase and sets up authentication with Google sign-in and custom email/password sign-in/sign-up.
+ */
 document.addEventListener("DOMContentLoaded", function () {
+    /**
+     * Configuration object containing Firebase credentials.
+     * @type {Object}
+     */
     const firebaseConfig = {
         apiKey: "AIzaSyBafFN9TD4y0JnXdOfXEYB7--a4oKL-Jvg",
         authDomain: "gracie-massage.firebaseapp.com",
@@ -18,7 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const signInForm = document.getElementById('custom-sign-in-form');
     const signUpButton = document.getElementById('custom-sign-up-button');
 
-    // Function to check if a password meets complexity requirements
+    /**
+     * Checks if a password meets complexity requirements.
+     * @param {string} password - The password to be validated.
+     * @returns {boolean} True if the password meets complexity requirements, otherwise false.
+     */
     function isPasswordValid(password) {
         // Minimum length requirement
         if (password.length < 8) {
@@ -42,7 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
         return true;
     }
 
-    // Function to redirect the user to the account page.
+    /**
+     * Redirects the user to the account page.
+     */
     function redirectToAccountPage() {
         window.location.href = 'account.html';
     }
@@ -106,3 +119,4 @@ document.addEventListener("DOMContentLoaded", function () {
             });
     });
 });
+

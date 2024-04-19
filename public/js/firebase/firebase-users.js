@@ -1,5 +1,11 @@
-// Firebase configuration object containing credentials
+/**
+ * Firebase configuration object containing credentials.
+ */
 document.addEventListener("DOMContentLoaded", function () {
+    /**
+     * Configuration object containing Firebase credentials.
+     * @type {Object}
+     */
     const firebaseConfig = {
         apiKey: "AIzaSyBafFN9TD4y0JnXdOfXEYB7--a4oKL-Jvg",
         authDomain: "gracie-massage.firebaseapp.com",
@@ -15,12 +21,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Get a reference to the Firestore database
     const db = firebase.firestore();
+
     // Get references to HTML elements
     const saveButton = document.getElementById('save-btn');
     const nameInput = document.getElementById('name');
     const phoneInput = document.getElementById('phone');
 
-    // Event listener for the click event on the save button
+    /**
+     * Event listener for the click event on the save button.
+     */
     saveButton.addEventListener('click', function (event) {
         event.preventDefault();
 
@@ -45,5 +54,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
 

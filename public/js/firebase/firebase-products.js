@@ -1,4 +1,6 @@
-// Initialize Firebase
+/**
+ * Initialize Firebase with configuration.
+ */
 const firebaseConfig = {
     apiKey: "AIzaSyBafFN9TD4y0JnXdOfXEYB7--a4oKL-Jvg",
     authDomain: "gracie-massage.firebaseapp.com",
@@ -10,9 +12,17 @@ const firebaseConfig = {
 };
 
 firebase.initializeApp(firebaseConfig);
+
+/**
+ * Reference to Firestore database.
+ * @type {firebase.firestore.Firestore}
+ */
 const db = firebase.firestore();
 
-// Function to fetch product data from Firestore
+/**
+ * Fetches product data from Firestore.
+ * @returns {Promise<Object[]>} A promise resolving to an array of product objects.
+ */
 async function fetchProductData() {
     try {
         const snapshot = await db.collection('Products').get();
@@ -29,7 +39,10 @@ async function fetchProductData() {
     }
 }
 
-// Function to create product cards dynamically
+/**
+ * Dynamically creates product cards based on the provided product data.
+ * @param {Object[]} products - An array of product objects.
+ */
 function createProductCards(products) {
     const productGrid = document.querySelector('.product-grid');
     products.forEach(product => {
@@ -46,24 +59,6 @@ function createProductCards(products) {
         productGrid.appendChild(productCard);
     });
 }
-
-// Add event listener to the product grid container
-const productGrid = document.querySelector('.product-grid');
-productGrid.addEventListener('click', function(event) {
-    if (event.target && event.target.classList.contains('add-to-cart-btn')) {
-        // Find the parent product card element
-        const productCard = event.target.closest('.product-card');
-        // Extract product data from the product card
-        const product = {
-            id: productCard.dataset.productId,
-            title: productCard.querySelector('.title').textContent,
-            price: productCard.querySelector('.price').textContent
-        };
-        // Add the product to the cart
-        addToCart(product);
-    }
-});
-
 
 // Fetch product data from Firestore and populate product cards
 fetchProductData()
