@@ -1,9 +1,14 @@
+/**
+ * Redirects the user to the shop page.
+ */
 function redirectToShop() {
     window.location.href = "shop.html";
 }
 
-// Function to handle adding a product to the cart
-// Function to handle adding a product to the cart
+/**
+ * Handles adding a product to the cart.
+ * @param {Object} product - The product object to add to the cart.
+ */
 function addToCart(product) {
     let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
@@ -37,7 +42,9 @@ document.addEventListener('click', function(event) {
     }
 });
 
-// Function to retrieve and display cart items
+/**
+ * Retrieves and displays cart items.
+ */
 function displayCartItems() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const basketList = document.getElementById('basket-items');
@@ -80,4 +87,5 @@ function displayCartItems() {
 
 // Call the function when the basket page loads
 window.addEventListener('load', displayCartItems);
+
 

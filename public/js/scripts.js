@@ -1,4 +1,6 @@
-//HEADER//
+/**
+ * Function to handle the sticky behavior of the header on scroll.
+ */
 window.onscroll = function () {
     stickyScroll();
 };
@@ -6,7 +8,9 @@ window.onscroll = function () {
 const header = document.getElementById("topHeader");
 const sticky = header.offsetTop;
 
-// toggling the about tab in the navigation menu in top header
+/**
+ * Toggles the visibility of the navigation menu in the top header.
+ */
 function toggleMenu() {
     const menu = document.getElementById("menu1");
     if (menu.style.display === "block") {
@@ -16,7 +20,9 @@ function toggleMenu() {
     }
 }
 
-// function to keep top menu on screen when scrolling
+/**
+ * Keeps the top menu on the screen when scrolling.
+ */
 function stickyScroll() {
     if (window.scrollY > sticky) {
         header.classList.add("sticky");
@@ -25,14 +31,20 @@ function stickyScroll() {
     }
 }
 
-//USER ACCOUNT DETAILS//
+/**
+ * Function to handle user account details.
+ */
 document.addEventListener("DOMContentLoaded", function () {
     // Getting references to DOM elements
     const userDetailsContainer = document.getElementById('user-details');
     const saveButton = document.getElementById('save-btn');
     const logoutButton = document.getElementById('logout-btn');
 
-    // Function to display user details
+    /**
+     * Displays user details including email, name, and phone number.
+     * @param {string} name - The name of the user.
+     * @param {string} phone - The phone number of the user.
+     */
     function displayUserDetails(name, phone) {
         // Clearing the user details container
         userDetailsContainer.innerHTML = '';
@@ -79,7 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Displaying user details on page load
     displayUserDetails();
 });
-
 
 
 

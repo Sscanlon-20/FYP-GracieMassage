@@ -1,5 +1,12 @@
-// Firebase configuration object containing credentials
+/**
+ * Firebase configuration object containing credentials.
+ * Initializes Firebase and handles icon click events for account authentication.
+ */
 document.addEventListener("DOMContentLoaded", function () {
+    /**
+     * Firebase configuration object containing credentials.
+     * @type {Object}
+     */
     const firebaseConfig = {
         apiKey: "AIzaSyBafFN9TD4y0JnXdOfXEYB7--a4oKL-Jvg",
         authDomain: "gracie-massage.firebaseapp.com",
@@ -11,6 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     firebase.initializeApp(firebaseConfig); // Initialize Firebase
+
+    /**
+     * Function to handle click events on the account icon.
+     */
     function handleIconClick() {
         const accountIcon = document.getElementById('top-account-icon');
         accountIcon.addEventListener('click', function (event) {
@@ -29,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-// Wait for DOM content to be loaded
+    // Wait for DOM content to be loaded
     document.addEventListener("DOMContentLoaded", function () {
         handleIconClick(); // Call function to handle icon click
     });

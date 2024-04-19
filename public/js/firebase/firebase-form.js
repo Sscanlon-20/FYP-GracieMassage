@@ -1,4 +1,6 @@
-//Event listener for the contact form submission.
+/**
+ * Event listener for the contact form submission.
+ */
 document.getElementById('contact-form').addEventListener('submit', function (event) {
     // Prevent default form submission behavior
     event.preventDefault();

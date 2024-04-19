@@ -11,7 +11,10 @@ admin.initializeApp({
 // Get a reference to Firestore
 const db = admin.firestore();
 
-// Update Firestore documents with image URLs
+/**
+ * Updates Firestore documents with image URLs retrieved from Firebase Storage.
+ * @returns {Promise<void>} A Promise that resolves when the documents are successfully updated.
+ */
 async function updateDocuments() {
     const collectionRef = db.collection('Products');
 
@@ -42,7 +45,11 @@ async function updateDocuments() {
     }
 }
 
-// Function to retrieve image URL from Firebase Storage
+/**
+ * Retrieves the signed URL of an image from Firebase Storage.
+ * @param {string} filePath - The path to the image file in Firebase Storage.
+ * @returns {Promise<string>} A Promise that resolves with the signed URL of the image.
+ */
 async function getImageUrl(filePath) {
     try {
         const storage = admin.storage();

@@ -1,4 +1,6 @@
-//REVIEWS
+/**
+ * Fetches Google reviews for a specific place and displays them on the page.
+ */
 function fetchGoogleReviews() {
     const placeId = 'ChIJqfaLmCfDQkgRZPmor6c7_IU';
     const apiKey = 'AIzaSyBafFN9TD4y0JnXdOfXEYB7--a4oKL-Jvg';
@@ -33,7 +35,11 @@ function fetchGoogleReviews() {
     });
 }
 
-// Helper function to generate star icons for rating
+/**
+ * Generates star icons based on the rating.
+ * @param {number} rating - The rating of the review.
+ * @returns {string} A string containing HTML for star icons representing the rating.
+ */
 function getStars(rating) {
     let stars = '';
     for (let i = 0; i < 5; i++) {
@@ -50,4 +56,3 @@ function getStars(rating) {
 document.addEventListener('DOMContentLoaded', function () {
     fetchGoogleReviews();
 });
-
