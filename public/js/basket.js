@@ -33,7 +33,7 @@ document.addEventListener('click', function(event) {
 
         const productCard = event.target.closest('.product-card');
         const product = {
-            id: productCard.dataset.productId,
+            id: event.target.dataset.productId,
             title: productCard.querySelector('.title').textContent,
             price: productCard.querySelector('.price').textContent
         };
@@ -48,7 +48,7 @@ document.addEventListener('click', function(event) {
 function displayCartItems() {
     const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const basketList = document.getElementById('basket-items');
-    let totalPrice = 0; // Initialize total price
+    let totalPrice = 0;
 
     basketList.innerHTML = '';
 
