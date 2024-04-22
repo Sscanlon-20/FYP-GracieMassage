@@ -28,7 +28,7 @@ function addToCart(product) {
 }
 
 // Event listener for the "Add to Cart" button
-document.addEventListener('click', function(event) {
+document.addEventListener('click', function (event) {
     if (event.target && event.target.classList.contains('add-to-cart-btn')) {
 
         const productCard = event.target.closest('.product-card');
@@ -57,7 +57,7 @@ function displayCartItems() {
         const deleteIcon = document.createElement('i');
         deleteIcon.classList.add('trash', 'icon', 'delete-item-icon');
 
-        deleteIcon.addEventListener('click', function() {
+        deleteIcon.addEventListener('click', function () {
             // Remove the item from the cartItems array
             const index = cartItems.findIndex(cartItem => cartItem.id === item.id);
             cartItems.splice(index, 1);
@@ -88,3 +88,28 @@ function displayCartItems() {
 // Call the function when the basket page loads
 window.addEventListener('load', displayCartItems);
 
+// Initialize PayPal SDK and render PayPal button
+paypal
+    .Buttons({
+        createOrder: function (data, actions) {
+            // Fetch cart items and calculate total amount
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const totalAmount = calculateTotalAmount(cartItems);
+
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: totalAmount.toFixed(2)
+                    }
+                }]
+            });
+        },
+        onApprove: function (data, actions) {
+            return actions.order.capture().then(function (details) {
+                // Payment successful, handle further actions (e.g., save order details)
+                alert('Transaction completed by ' + details.payer.name.given_name);
+                // Call your backend to save the transaction details
+            });
+        }
+    })
+    .render('#paypal-button-container');

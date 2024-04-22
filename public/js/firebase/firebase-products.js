@@ -54,7 +54,7 @@ function createProductCards(products) {
             <h3>${product.Subtitle}</h3>
             <p>${product.Description}</p>
             <p class="price">${product.Price}</p>
-           <button class="add-to-cart-btn" data-productId="${product.id}">Add to Cart</button>
+           <button class="add-to-cart-btn" data-product-id="${product.id}">Add to Cart</button>
         `;
         productGrid.appendChild(productCard);
     });
